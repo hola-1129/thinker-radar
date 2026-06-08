@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkerRadar · 2026-06-08</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="description" content="追踪全球顶尖思想者的最新观点与预测">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">📡</div>
+      <div>
+        <div class="logo-text">ThinkerRadar</div>
+        <div class="logo-sub">思想雷达</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link active">今日情报</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">思想雷达 · THINKER RADAR</div>
+    <h1 class="hero-title">今日思想情报</h1>
+    <div class="hero-date">2026-06-08 &nbsp;·&nbsp; 更新于 2026-06-08 22:18 UTC</div>
+    <div class="hero-stats">
+      <div class="stat-item"><span class="stat-num">5</span><span class="stat-label">今日内容</span></div>
+      <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">提取观点</span></div>
+      <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">重要信号</span></div>
+      <div class="stat-item"><span class="stat-num">1</span><span class="stat-label">原话收录</span></div>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="container page-body">
+
+  <!-- Thinker chips -->
+  <div class="thinker-row" id="thinker-row">
+    <button class="thinker-chip active" data-person="all" onclick="filterPerson('all',this)">
+      <div class="thinker-avatar" style="background:#1e40af">全部</div>
+      <span class="thinker-name">所有人</span>
+    </button>
+    
+    <button class="thinker-chip" data-person="ilya-sutskever"
+            style="--person-color:#7c3aed"
+            onclick="filterPerson('ilya-sutskever',this)">
+      <div class="thinker-avatar">IS</div>
+      <div>
+        <div class="thinker-name">Ilya</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="demis-hassabis"
+            style="--person-color:#1d4ed8"
+            onclick="filterPerson('demis-hassabis',this)">
+      <div class="thinker-avatar">DH</div>
+      <div>
+        <div class="thinker-name">Demis</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="geoffrey-hinton"
+            style="--person-color:#d97706"
+            onclick="filterPerson('geoffrey-hinton',this)">
+      <div class="thinker-avatar">GH</div>
+      <div>
+        <div class="thinker-name">Geoffrey</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="peter-thiel"
+            style="--person-color:#374151"
+            onclick="filterPerson('peter-thiel',this)">
+      <div class="thinker-avatar">PT</div>
+      <div>
+        <div class="thinker-name">Peter</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="marc-andreessen"
+            style="--person-color:#059669"
+            onclick="filterPerson('marc-andreessen',this)">
+      <div class="thinker-avatar">MA</div>
+      <div>
+        <div class="thinker-name">Marc</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="howard-marks"
+            style="--person-color:#dc2626"
+            onclick="filterPerson('howard-marks',this)">
+      <div class="thinker-avatar">HM</div>
+      <div>
+        <div class="thinker-name">Howard</div>
+        <div class="thinker-count">2 条观点</div>
+      </div>
+    </button>
+  </div>
+
+  <!-- Filter bar (themes) -->
+  <div class="filter-bar" id="theme-filters">
+    <div class="filter-group-label">按主题筛选</div>
+    <button class="filter-btn active" data-theme="all" onclick="filterTheme('all',this)">全部主题</button>
+    <button class="filter-btn" data-theme="market-cycles" onclick="filterTheme('market-cycles',this)">Market Cycles <span style="opacity:.6;font-size:.65rem">(2)</span></button>
+    <button class="filter-btn" data-theme="risk-management" onclick="filterTheme('risk-management',this)">Risk Management <span style="opacity:.6;font-size:.65rem">(2)</span></button>
+  </div>
+
+  <!-- Notable signals -->
+  
+  <section class="section-block">
+    <h2 class="section-title">
+      <span class="title-dot title-dot--gold"></span>
+      今日重要信号
+      <span class="section-count">2 条</span>
+    </h2>
+    <div class="opinion-grid opinion-grid--wide" id="signals-grid">
+      
+  <article class="signal-card"
+           style="--person-color:#dc2626;--person-rgb:220,38,38"
+           data-person="howard-marks"
+           data-themes="market-cycles risk-management">
+    <div class='signal-label'>⚡ NOTABLE SIGNAL</div>
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#dc2626">
+        <span class="person-dot">H</span>
+        Howard
+      </span>
+      <span class="type-badge type--position">立场</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">当前市场估值已接近历史极端水平，但这并不意味着泡沫即将破裂——泡沫可以比理性预期持续更长时间。</p>
+    <p class="opinion-context">在最新备忘录中回应市场是否处于泡沫的质疑</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-06-01</span>
+      <a href="https://www.oaktreecapital.com/insights/memos/on-bubble-watch" target="_blank" rel="noopener" class="source-link"
+         title="On Bubble Watch">
+        查看原文 →
+      </a>
+    </div>
+  </article>
+
+  <article class="signal-card"
+           style="--person-color:#dc2626;--person-rgb:220,38,38"
+           data-person="howard-marks"
+           data-themes="market-cycles risk-management">
+    <div class='signal-label'>⚡ NOTABLE SIGNAL</div>
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#dc2626">
+        <span class="person-dot">H</span>
+        Howard
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">未来12-18个月，信贷市场面临流动性收缩，高收益债券违约率可能上升至历史均值以上。</p>
+    <p class="opinion-context">对当前信贷周期的前瞻判断</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-06-01</span>
+      <a href="https://www.oaktreecapital.com/insights/memos/on-bubble-watch" target="_blank" rel="noopener" class="source-link"
+         title="On Bubble Watch">
+        查看原文 →
+      </a>
+    </div>
+  </article>
+    </div>
+  </section>
+
+  <!-- By thinker -->
+  
+  <section class="section-block" id="by-thinker">
+    <h2 class="section-title">
+      <span class="title-dot"></span>
+      各思想者观点
+      <span class="section-count">2 条</span>
+    </h2>
+    
+    <div class="person-section" data-person-section="howard-marks">
+      <div class="person-header">
+        <div class="person-avatar-lg" style="background:#dc2626">HM</div>
+        <div class="person-info">
+          <div class="person-name">Howard Marks</div>
+          <div class="person-role">Co-founder & Co-Chairman · Oaktree Capital Management</div>
+        </div>
+        <a href="profiles/howard-marks.html" class="person-profile-link">完整档案 →</a>
+      </div>
+      <div class="opinion-grid">
+        
+  <article class="opinion-card opinion-card--notable"
+           style="--person-color:#dc2626;--person-rgb:220,38,38"
+           data-person="howard-marks"
+           data-themes="market-cycles risk-management">
+    
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#dc2626">
+        <span class="person-dot">H</span>
+        Howard
+      </span>
+      <span class="type-badge type--position">立场</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">当前市场估值已接近历史极端水平，但这并不意味着泡沫即将破裂——泡沫可以比理性预期持续更长时间。</p>
+    <p class="opinion-context">在最新备忘录中回应市场是否处于泡沫的质疑</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-06-01</span>
+      <a href="https://www.oaktreecapital.com/insights/memos/on-bubble-watch" target="_blank" rel="noopener" class="source-link"
+         title="On Bubble Watch">
+        查看原文 →
+      </a>
+    </div>
+  </article>
+
+  <article class="opinion-card opinion-card--notable"
+           style="--person-color:#dc2626;--person-rgb:220,38,38"
+           data-person="howard-marks"
+           data-themes="market-cycles risk-management">
+    
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#dc2626">
+        <span class="person-dot">H</span>
+        Howard
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">未来12-18个月，信贷市场面临流动性收缩，高收益债券违约率可能上升至历史均值以上。</p>
+    <p class="opinion-context">对当前信贷周期的前瞻判断</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-06-01</span>
+      <a href="https://www.oaktreecapital.com/insights/memos/on-bubble-watch" target="_blank" rel="noopener" class="source-link"
+         title="On Bubble Watch">
+        查看原文 →
+      </a>
+    </div>
+  </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes -->
+  
+  <section class="section-block" id="quotes">
+    <h2 class="section-title">
+      <span class="title-dot title-dot--accent"></span>
+      今日原话
+      <span class="section-count">1 条</span>
+    </h2>
+    <div class="quote-grid">
+      
+      <div class="quote-card" data-person="howard-marks">
+        <blockquote class="quote-text">Being too far ahead of your time is indistinguishable from being wrong.</blockquote>
+        <div class="quote-attribution">
+          <div class="person-dot" style="background:#dc2626;width:20px;height:20px;border-radius:50%;display:inline-block"></div>
+          <span class="quote-author">Howard Marks</span>
+          <a href="https://www.oaktreecapital.com/insights/memos/on-bubble-watch" target="_blank" rel="noopener" class="quote-source">
+            On Bubble Watch →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
+  <div>最后更新：2026-06-08 22:18 UTC</div>
+</footer>
+<script>
+let activePerson = 'all';
+let activeTheme  = 'all';
+
+function applyFilters() {
+  const cards = document.querySelectorAll('[data-person][data-themes]');
+  cards.forEach(card => {
+    const personMatch = activePerson === 'all' || card.dataset.person === activePerson;
+    const themes = card.dataset.themes ? card.dataset.themes.split(' ') : [];
+    const themeMatch  = activeTheme  === 'all' || themes.includes(activeTheme);
+    card.classList.toggle('opinion-card--hidden', !(personMatch && themeMatch));
+  });
+  // Also filter quote cards (only person filter applies)
+  document.querySelectorAll('.quote-card[data-person]').forEach(card => {
+    const m = activePerson === 'all' || card.dataset.person === activePerson;
+    card.style.display = m ? '' : 'none';
+  });
+}
+
+function filterPerson(id, btn) {
+  activePerson = id;
+  document.querySelectorAll('#thinker-row .thinker-chip').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function filterTheme(id, btn) {
+  activeTheme = id;
+  document.querySelectorAll('#theme-filters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+</script>
+</body>
+</html>
