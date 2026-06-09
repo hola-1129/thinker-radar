@@ -715,6 +715,10 @@ blockquote.quote-text {
 .analysis-card--predict .analysis-card-header { background: #f5f3ff; }
 .analysis-card--predict .analysis-card-title  { color: #5b21b6; }
 
+.analysis-card--translation { border-top: 3px solid #0891b2; }
+.analysis-card--translation .analysis-card-header { background: #ecfeff; }
+.analysis-card--translation .analysis-card-title  { color: #164e63; }
+
 /* Prose inside analysis cards */
 .analysis-prose { font-size: .88rem; line-height: 1.8; color: #374151; }
 .analysis-prose h2, .analysis-prose h3 { display: none; } /* strip LLM headers */

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Larger biological models demonstrate improved performance on · ThinkerRadar</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body style="--person-color:#1d4ed8">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../../index.html" class="logo">
+      <div class="logo-icon">📡</div>
+      <div>
+        <div class="logo-text">ThinkerRadar</div>
+        <div class="logo-sub">思想雷达</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="../../index.html" class="nav-link">今日情报</a>
+      <a href="../../timeline.html" class="nav-link">时间轴</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Detail Hero -->
+<section class="detail-hero" style="background:linear-gradient(140deg,#0f172a 0%,#1d4ed8 100%)">
+  <div class="container">
+    <div class="breadcrumb" style="padding-top:0;margin-bottom:16px">
+      <a href="../../index.html">ThinkerRadar</a>
+      <span>›</span>
+      <a href="../../profiles/demis-hassabis.html">Demis Hassabis</a>
+      <span>›</span>
+      <span>观点详情</span>
+    </div>
+
+    <div class="detail-signal-badge">
+      <span class="signal-dot signal-dot--strong"></span>
+      强信号 &nbsp;·&nbsp; <span class="type-badge type--claim" style="padding:1px 7px">主张</span>
+    </div>
+
+    <p class="detail-pull-quote">Larger biological models demonstrate improved performance on biology tasks, following scaling laws similar to natural language models, and this scaling enables entirely new emergent capabilities rather than just incremental improvements on existing tasks</p>
+
+    <p class="detail-key-thesis">生物大模型遵循scaling law，规模跃升催生全新涌现能力而非线性改进</p>
+
+    <div class="detail-meta-row">
+      <span style="background:rgba(255,255,255,.15);border-radius:20px;padding:3px 10px 3px 6px;display:inline-flex;align-items:center;gap:6px">
+        <span style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.25);display:inline-flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700">DH</span>
+        Demis Hassabis
+      </span>
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/how-a-gemma-model-helped-discover-a-new-potential-cancer-therapy-pathway/" target="_blank" rel="noopener">原文：How a Gemma model helped discover a new potential </a>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="container page-body">
+
+  
+<div class="thesis-banner">
+  <div class="thesis-icon">🎯</div>
+  <div>
+    <div class="thesis-label">核心论点</div>
+    <div class="thesis-text">生物大模型遵循scaling law，规模跃升催生全新涌现能力而非线性改进</div>
+  </div>
+  <div class="thesis-horizon">
+    <div class="horizon-label">时间维度</div>
+    <div class="horizon-value">中期（6-18个月）</div>
+  </div>
+</div>
+  
+<div class="analysis-card analysis-card--translation" style="margin-bottom:20px">
+  <div class="analysis-card-header">
+    <span class="analysis-card-icon">🌐</span>
+    <span class="analysis-card-title">原文翻译</span>
+  </div>
+  <div class="analysis-card-body">
+    <div class="analysis-prose"><p><strong>Gemma模型助力发现潜在癌症治疗新通路</strong></p>
+<p>今日，作为我们与耶鲁大学研究合作的一部分，我们发布了 Cell2Sentence-Scale 27B（C2S-Scale）——一个拥有270亿参数的新型基础模型，专为理解单个细胞的&quot;语言&quot;而设计。该模型基于Gemma开放模型家族构建，代表了单细胞分析领域的新前沿。</p>
+<p>这一发布标志着AI在科学领域的重要里程碑。C2S-Scale针对癌症细胞行为生成了一个新颖假说，我们随后在活细胞实验中对该预测进行了实验验证。这一发现揭示了开发癌症治疗方法的一条颇具前景的新通路。</p>
+<p>此次发布建立在我们今年早些时候的工作基础之上——我们证明了生物模型遵循清晰的规模扩展定律（scaling laws）：就像自然语言模型一样，更大的模型在生物学任务上表现更好。这项工作引出了一个关键问题：更大的模型是仅仅在现有任务上表现更好，还是能够获得全新的能力？规模扩展的真正潜力在于创造新思想，发现未知领域。</p>
+<p><strong>C2S-Scale 27B的工作原理</strong></p>
+<p>癌症免疫治疗面临的主要挑战之一是许多肿瘤是&quot;冷&quot;肿瘤——对人体免疫系统不可见。使其变&quot;热&quot;的关键策略是通过一个称为抗原呈递（antigen presentation）的过程，迫使肿瘤展示免疫触发信号。</p>
+<p>我们给新的C2S-Scale 27B模型布置了一项任务：找到一种充当条件放大器的药物——仅在特定&quot;免疫背景阳性&quot;环境中增强免疫信号，即在干扰素（interferon，一种关键免疫信号蛋白）水平较低但不足以单独诱导抗原呈递的情况下发挥作用。这需要一种条件推理能力，而这种能力似乎是规模带来的涌现能力（emergent capability）——我们较小的模型无法解析这种依赖上下文的效应。</p>
+<p>为此，我们设计了一个双背景虚拟筛选（dual-context virtual screen）来寻找这种特定的协同效应。筛选分两个阶段：一是&quot;免疫背景阳性&quot;阶段，提供具有完整肿瘤免疫相互作用和低水平干扰素信号的真实患者样本；二是&quot;免疫背景中性&quot;阶段，提供没有免疫背景的孤立细胞系数据。</p>
+<p>随后，模型模拟了4000多种药物在两种背景下的效果，并预测哪些药物仅在第一种背景下增强抗原呈递。在模型标记的众多候选药物中，10-30%的命中药物已见于现有文献，其余均为此前与该筛选无已知关联的令人意外的命中药物。</p>
+<p><strong>从预测到实验验证</strong></p>
+<p>模型的预测非常清晰。它识别出激酶CK2抑制剂silmitasertib（CX-4945）具有显著的&quot;背景分离&quot;特征，预测该药物在免疫背景阳性条件下会强烈增强抗原呈递。</p></div>
+  </div>
+</div><div class="analysis-grid">
+  <div class="analysis-card analysis-card--industry">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">🔬</span>
+      <span class="analysis-card-title">行业专家解析</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p><strong>行业共识程度：技术成立，但&quot;涌现&quot;叙事存在争议</strong></p>
+<p>Scaling law在自然语言处理领域的有效性已被充分验证（Chinchilla定律等），但其在生物领域的适用性是近两年才开始形成共识的观点。DeepMind早些时候发布的Cell2Sentence系列工作以及ESM（Evolutionary Scale Modeling）团队的工作共同建立了这一基础认知。从行业内部来看，认同&quot;生物序列数据可以被大语言模型框架处理&quot;的研究者已占主流，但对于&quot;规模带来涌现的条件推理能力&quot;这一具体主张，学界仍有保留意见。涌现（emergence）本身是一个定义模糊的概念——部分研究者认为这只是能力连续提升在特定评估任务上的相变表现，而非真正意义上的质变。</p>
+<p><strong>执行层面的技术挑战被严重低估</strong></p>
+<p>这一工作中最值得深思的技术细节是&quot;双背景虚拟筛选&quot;设计。这要求模型不仅能预测药物效果，还能区分两种截然不同的免疫背景下的差异性效应——这本质上是一种反事实推理（counterfactual reasoning）能力。这对训练数据的质量和多样性提出了极高要求：你需要有足够多的成对实验数据，覆盖相同药物在不同免疫背景下的响应差异。这类高质量成对数据的获取是整个技术栈中最昂贵、最难扩展的环节，也是学术机构（如耶鲁）作为合作伙伴不可或缺的原因——他们提供了真实患者样本数据。</p>
+<p><strong>被低估的关键细节：开放策略的战略意图</strong></p>
+<p>DeepMind选择将C2S-Scale基于开放的Gemma模型构建，而非封闭的Gemini系列，这一技术架构选择背后有深刻的战略逻辑。一方面，这降低了学术界的采用门槛，加速了科学社区的验证和数据反馈循环；另一方面，这也使得DeepMind能够在生物AI领域建立类似Hugging Face的生态位——成为生物基础模型的事实标准平台。被市场忽视的是：开放模型策略意味着DeepMind将从模型本身的货币化退步，转而追求数据飞轮和生态控制权。这对竞争对手的商业模式是一种根本性的威胁，比直接的技术竞争更难应对。</p>
+<p><strong>实验验证的含金量与局限性</strong></p>
+<p>此次在活细胞（living cells）层面完成了silmitasertib的验证，这是该领域少有的&quot;预测→实验闭环&quot;案例，含金量真实。然而，细胞实验（in vitro）与动物模型（in vivo）乃至人体临床试验之间的转化率历来偏低，尤其是肿瘤免疫领域。这一成果的正确解读方式是：证明了AI假设生成的有效性，而非证明了一个有效的癌症疗法。过度营销与真实科学进展之间的边界，是该领域投资者和观察者最需要保持清醒的地方。</p></div>
+    </div>
+  </div>
+
+  <div class="analysis-card analysis-card--predict">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">📈</span>
+      <span class="analysis-card-title">未来趋势展望</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p>（暂无分析）</p></div>
+    </div>
+  </div>
+
+  <div class="analysis-card analysis-card--invest">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">💰</span>
+      <span class="analysis-card-title">投资建议</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p><strong>核心逻辑：生物基础模型进入&quot;算力换能力&quot;的关键拐点</strong></p>
+<p>此次C2S-Scale 27B的发布，不是一个普通的模型迭代公告，而是DeepMind向外界释放的一个强烈信号：生物AI领域已正式进入scaling law驱动的能力跃迁阶段。这对资本市场的影响路径清晰：算力供应商→生物AI模型平台→制药/生物技术应用层，三层结构均有投资机会，但风险收益比差异显著。</p>
+<p><strong>算力与基础设施层：最直接受益</strong></p>
+<p>生物大模型从7B、13B跃升至27B并将继续向更大规模演进，这直接拉动GPU/TPU需求。英伟达（NVIDIA）仍是最直接受益标的，其H100/H200系列芯片是训练此类百亿参数生物模型的主要算力基础。从时间节点看，2025年底至2026年上半年，生物AI相关GPU采购需求将进一步提速，建议保持对NVIDIA的核心仓位。此外，Google自身的TPU基础设施优势在此类场景中被进一步强化，对Alphabet（GOOGL）估值中的云计算与AI基础设施板块具有正向贡献。</p>
+<p><strong>生物AI平台层：关注护城河深度</strong></p>
+<p>Recursion Pharmaceuticals（RXRX）、Schrödinger（SDGR）、Exscientia等纯生物AI公司将面临来自DeepMind/Google的竞争压力——尤其是DeepMind选择将C2S-Scale基于开放模型Gemma构建并对外开放，这一策略具有明显的生态位压制意图。短期内，上述公司股价可能因竞争叙事而承压；但中期来看，具备真实湿实验室（wet lab）验证能力的公司（如Recursion拥有自己的自动化实验室）反而因&quot;预测+验证&quot;的全链条能力构筑了差异化护城河，值得关注其2025年底至2026年的临床管线进展。</p>
+<p><strong>制药应用层：催化剂明确但周期较长</strong></p>
+<p>silmitasertib（CX-4945）本身是一个已有研究背景的CK2抑制剂，此次AI预测带来的新适应症方向（肿瘤免疫联合治疗）将为持有相关管线的公司带来潜在价值重估。投资者应关注持有该化合物开发权的Cipher Pharmaceuticals等相关方。更广泛地看，所有在癌症免疫治疗领域布局的大型制药公司（默克、BMS、罗氏）都将评估与类似AI平台的合作，预计2026年内将出现多笔里程碑式合作协议，这是可观察的近期催化剂。</p>
+<p><strong>风险点</strong>：实验验证在细胞水平的成功与临床成功之间存在巨大鸿沟，监管路径不确定性高；同时，DeepMind开放模型策略可能压缩整个生物AI SaaS赛道的商业化空间，需警惕该赛道的估值泡沫。</p></div>
+    </div>
+  </div>
+
+  <div class="analysis-card analysis-card--history">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">📜</span>
+      <span class="analysis-card-title">历史言论对比</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p><strong>延续性：此观点是Hassabis长期叙事的具体落地</strong></p>
+<p>纵观Hassabis近期的公开表态，此次C2S-Scale发布的核心叙事与其一贯立场高度一致。2026年5月的多条历史观点明确指出&quot;科学突破将越来越多地来自通用AI智能体而非窄域专用模型&quot;，以及&quot;AI应作为力量倍增器赋能人类科学创造力&quot;。C2S-Scale的发布是对这一宏观立场的精准具体化实例：一个通用生物基础模型（而非专为CK2抑制剂设计的专用模型）通过条件推理发现了新假设，并经实验验证。这不是偶然的，而是Hassabis团队有意将实验成果与其公开叙事框架对齐的产物。</p>
+<p><strong>微妙转变：从&quot;协作工具&quot;到&quot;自主发现&quot;的叙事升级</strong></p>
+<p>仔细对比历史观点可以发现一个值得注意的叙事重心迁移。2026年5月的表述仍然强调AI处理&quot;复杂耗时任务&quot;以&quot;解放研究者专注于识别最有影响力的问题&quot;——这是一种工具赋能叙事（AI as tool）。但此次C2S-Scale的发布则更进一步，将AI描述为自主生成&quot;新颖假说&quot;的主体——模型本身提出了研究者事先未想到的方向。这一叙事从&quot;工具&quot;向&quot;协作发现者&quot;甚至&quot;独立发现者&quot;的移动，是值得持续追踪的信号。如果后续更多发布继续强化&quot;AI独立提出假说&quot;这一框架，将意味着Hassabis正在为更大胆的AGI科学应用叙事做铺垫。</p>
+<p><strong>与&quot;负责任开发&quot;立场的内在张力</strong></p>
+<p>2026年3月，Hassabis强调必须审视AI互动对人类社会的影响，警惕有害操纵的可能性。而此次发布则以高度乐观的技术进步框架呈现，几乎未触及生物AI在伦理、安全层面的讨论（如AI生成的药物假说被滥用的可能性）。这种张力目前尚未演变为公开矛盾，但随着生物AI能力的快速提升，这一内部叙事平衡将越来越难以维持，值得持续观察其公开表态的取舍。</p></div>
+    </div>
+  </div></div>
+  
+<section class="section-block">
+  <h2 class="section-title">
+    <span class="title-dot"></span>
+    该人物近期其他观点
+    <span class="section-count">6 条</span>
+  </h2>
+  <div class="past-opinions">
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">Scientific breakthroughs will increasingly come from general AI agents rather than narrow, specialized models, and these agents should empower researchers across all scientific fields</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">AI should serve as a force multiplier for human scientific ingenuity by handling complex, time-consuming tasks, freeing researchers to focus on identifying the most impactful problems</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--claim" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">主张</span></div>
+      <div class="past-opinion-text">The primary bottleneck in modern science is not the generation of ideas but the manual synthesis and analysis of the exponentially growing body of scientific literature and data</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">Responsible development and deployment of AI tools for science requires deep collaboration with the scientific community, including validation from trusted testers ranging from PhD students to Nobel laureates</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-04-21<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">AI is one of the most transformative technologies of our time, capable of delivering new products and services and scientific breakthroughs that improve the lives of billions of people</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-04-21<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">AI must be diffused responsibly across industries and remain guided by human expertise to secure benefits and solve critical global challenges</div>
+    </div></div>
+</section>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
+  <div>最后更新：2026-06-09 09:02 UTC</div>
+</footer>
+</body>
+</html>
