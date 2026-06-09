@@ -30,7 +30,7 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · THINKER RADAR</div>
     <h1 class="hero-title">精选情报</h1>
-    <div class="hero-date">更新于 2026-06-09 21:00 UTC</div>
+    <div class="hero-date">更新于 2026-06-09 21:41 UTC</div>
     <div class="hero-stats">
       <div class="stat-item"><span class="stat-num">6</span><span class="stat-label">精选观点</span></div>
       <div class="stat-item"><span class="stat-num">6</span><span class="stat-label">重要信号</span></div>
@@ -106,6 +106,26 @@
       <div>
         <div class="thinker-name">Howard</div>
         <div class="thinker-count">2 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="andrej-karpathy"
+            style="--person-color:#ea580c"
+            onclick="filterPerson('andrej-karpathy',this)">
+      <div class="thinker-avatar">AK</div>
+      <div>
+        <div class="thinker-name">Andrej</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="alex-karp"
+            style="--person-color:#0f4c81"
+            onclick="filterPerson('alex-karp',this)">
+      <div class="thinker-avatar">AK</div>
+      <div>
+        <div class="thinker-name">Alex</div>
+        <div class="thinker-count">0 条观点</div>
       </div>
     </button>
   </div>
@@ -265,7 +285,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-06-09 21:00 UTC</div>
+  <div>最后更新：2026-06-09 21:41 UTC</div>
 </footer>
 <script>
 let activePerson = 'all';
