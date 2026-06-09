@@ -30,11 +30,11 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · THINKER RADAR</div>
     <h1 class="hero-title">精选情报</h1>
-    <div class="hero-date">更新于 2026-06-09 22:37 UTC</div>
+    <div class="hero-date">更新于 2026-06-09 23:24 UTC</div>
     <div class="hero-stats">
-      <div class="stat-item"><span class="stat-num">14</span><span class="stat-label">精选观点</span></div>
-      <div class="stat-item"><span class="stat-num">14</span><span class="stat-label">重要信号</span></div>
-      <div class="stat-item"><span class="stat-num">4</span><span class="stat-label">思想者</span></div>
+      <div class="stat-item"><span class="stat-num">18</span><span class="stat-label">精选观点</span></div>
+      <div class="stat-item"><span class="stat-num">18</span><span class="stat-label">重要信号</span></div>
+      <div class="stat-item"><span class="stat-num">5</span><span class="stat-label">思想者</span></div>
     </div>
   </div>
 </section>
@@ -148,18 +148,70 @@
         <div class="thinker-count">0 条观点</div>
       </div>
     </button>
+
+    <button class="thinker-chip" data-person="niall-ferguson"
+            style="--person-color:#b45309"
+            onclick="filterPerson('niall-ferguson',this)">
+      <div class="thinker-avatar">NF</div>
+      <div>
+        <div class="thinker-name">Niall</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="vaclav-smil"
+            style="--person-color:#166534"
+            onclick="filterPerson('vaclav-smil',this)">
+      <div class="thinker-avatar">VS</div>
+      <div>
+        <div class="thinker-name">Vaclav</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="yuval-noah-harari"
+            style="--person-color:#6d28d9"
+            onclick="filterPerson('yuval-noah-harari',this)">
+      <div class="thinker-avatar">YH</div>
+      <div>
+        <div class="thinker-name">Yuval</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="michael-pettis"
+            style="--person-color:#0369a1"
+            onclick="filterPerson('michael-pettis',this)">
+      <div class="thinker-avatar">MP</div>
+      <div>
+        <div class="thinker-name">Michael</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="azeem-azhar"
+            style="--person-color:#0f766e"
+            onclick="filterPerson('azeem-azhar',this)">
+      <div class="thinker-avatar">AA</div>
+      <div>
+        <div class="thinker-name">Azeem</div>
+        <div class="thinker-count">4 条观点</div>
+      </div>
+    </button>
   </div>
 
   <!-- Theme filters -->
   <div class="filter-bar" id="theme-filters">
     <div class="filter-group-label">按主题筛选</div>
     <button class="filter-btn active" data-theme="all" onclick="filterTheme('all',this)">全部</button>
-    <button class="filter-btn" data-theme="market-cycles" onclick="filterTheme('market-cycles',this)">Market Cycles <span style="opacity:.6;font-size:.65rem">(5)</span></button>
+    <button class="filter-btn" data-theme="market-cycles" onclick="filterTheme('market-cycles',this)">Market Cycles <span style="opacity:.6;font-size:.65rem">(7)</span></button>
     <button class="filter-btn" data-theme="risk-management" onclick="filterTheme('risk-management',this)">Risk Management <span style="opacity:.6;font-size:.65rem">(5)</span></button>
+    <button class="filter-btn" data-theme="agi" onclick="filterTheme('agi',this)">AGI <span style="opacity:.6;font-size:.65rem">(4)</span></button>
+    <button class="filter-btn" data-theme="ai-agents" onclick="filterTheme('ai-agents',this)">AI Agents <span style="opacity:.6;font-size:.65rem">(4)</span></button>
     <button class="filter-btn" data-theme="ai-safety" onclick="filterTheme('ai-safety',this)">AI Safety <span style="opacity:.6;font-size:.65rem">(3)</span></button>
-    <button class="filter-btn" data-theme="agi" onclick="filterTheme('agi',this)">AGI <span style="opacity:.6;font-size:.65rem">(3)</span></button>
-    <button class="filter-btn" data-theme="ai-agents" onclick="filterTheme('ai-agents',this)">AI Agents <span style="opacity:.6;font-size:.65rem">(3)</span></button>
     <button class="filter-btn" data-theme="scientific-discovery" onclick="filterTheme('scientific-discovery',this)">Scientific Discovery via AI <span style="opacity:.6;font-size:.65rem">(3)</span></button>
+    <button class="filter-btn" data-theme="startup-ecosystem" onclick="filterTheme('startup-ecosystem',this)">Startup Ecosystem <span style="opacity:.6;font-size:.65rem">(2)</span></button>
+    <button class="filter-btn" data-theme="ai-labor" onclick="filterTheme('ai-labor',this)">AI & Labor <span style="opacity:.6;font-size:.65rem">(1)</span></button>
     <button class="filter-btn" data-theme="techno-optimism" onclick="filterTheme('techno-optimism',this)">Techno-optimism <span style="opacity:.6;font-size:.65rem">(1)</span></button>
   </div>
 
@@ -169,7 +221,7 @@
     <h2 class="section-title">
       <span class="title-dot title-dot--gold"></span>
       精选观点
-      <span class="section-count">14 条 · 按信号强度排序</span>
+      <span class="section-count">18 条 · 按信号强度排序</span>
     </h2>
     <div class="opinion-grid opinion-grid--wide" id="curated-grid">
       
@@ -236,23 +288,107 @@
     </div>
   </a>
 
-  <a href="opinions/b454edb76d3df2ea/index.html" class="opinion-card opinion-card--notable card-clickable"
+  <a href="opinions/07fd3ac65dab377a/index.html" class="opinion-card opinion-card--notable card-clickable"
            style="--person-color:#d97706;--person-rgb:217,119,6"
            data-person="geoffrey-hinton"
-           data-themes="ai-safety">
+           data-themes="agi">
     <div class="card-meta-row">
       <span class="person-pill" style="background:#d97706">
         <span class="person-dot">G</span>
         Geoffrey
       </span>
+      <span class="type-badge type--change">变化</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">AI超越人类智能的时间远早于预期，他原先预估需30至50年，现已彻底放弃该判断</p>
+    <p class="opinion-context">对AGI出现时间的自我修正</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-06-07</span>
+      
+    </div>
+  </a>
+
+  <a href="opinions/ac158a5476932956/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#0f766e;--person-rgb:15,118,110"
+           data-person="azeem-azhar"
+           data-themes="ai-safety startup-ecosystem">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
       <span class="type-badge type--position">立场</span>
       <span class="notable-star" title="重要信号">⭐</span>
     </div>
-    <p class="opinion-text">离开Google是为了不受约束地警示AI风险，尤其担忧其将导致人类彻底丧失对真实信息的辨别能力</p>
-    <p class="opinion-context">辞职动机与核心安全关切</p>
-    <div class="theme-row"><span class="theme-chip">AI Safety</span></div>
+    <p class="opinion-text">AI驱动的自动化并非引发‘递归自我改进’式失控风险，而是人类主导的战略加速，其上限受商业现实（资本、芯片、电力）自然约束。</p>
+    <p class="opinion-context">回应Anthropic对递归自改进的警告</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Startup Ecosystem</span></div>
     <div class="card-foot">
       <span>2026-06-07</span>
+      
+    </div>
+  </a>
+
+  <a href="opinions/d1c930bc357c82d2/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#0f766e;--person-rgb:15,118,110"
+           data-person="azeem-azhar"
+           data-themes="ai-agents market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">从捆绑定价转向用量计费并非收缩市场，而是通过将成本与价值显性挂钩，推动AI市场向更健康、可持续的规模化增长演进。</p>
+    <p class="opinion-context">对比健身房与AI编码工具定价逻辑</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2026-06-03</span>
+      
+    </div>
+  </a>
+
+  <a href="opinions/06063a914d509036/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#0f766e;--person-rgb:15,118,110"
+           data-person="azeem-azhar"
+           data-themes="startup-ecosystem ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">AI正实质性降低创业门槛，使‘平庸但可用’的AI代理（如法律、财务、营销角色）替代零配置成为可能，从而催生新一轮创业潮。</p>
+    <p class="opinion-context">基于Torsten Slok数据与作者推论</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2026-06-07</span>
+      
+    </div>
+  </a>
+
+  <a href="opinions/872bf60ee673a67a/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#0f766e;--person-rgb:15,118,110"
+           data-person="azeem-azhar"
+           data-themes="market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">当前AI热潮是真实的客户驱动型繁荣，而非泡沫；仅一个指标亮红灯，尚不构成泡沫条件</p>
+    <p class="opinion-context">基于五指标历史模型的再评估</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2026-06-01</span>
       
     </div>
   </a>
@@ -474,7 +610,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-06-09 22:37 UTC</div>
+  <div>最后更新：2026-06-09 23:24 UTC</div>
 </footer>
 <script>
 let activePerson = 'all';

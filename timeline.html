@@ -28,7 +28,7 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · 时间轴</div>
     <h1 class="hero-title">观点时间分类</h1>
-    <div class="hero-date">共追踪 150 条观点 · 横跨 5 个年份</div>
+    <div class="hero-date">共追踪 180 条观点 · 横跨 5 个年份</div>
   </div>
 </section>
 
@@ -37,13 +37,13 @@
 
   <!-- Year tabs -->
   <div class="year-tabs">
-    <button class="year-tab" data-year="2026" onclick="showYear('2026',this)">2026<span class="year-count">40</span></button><button class="year-tab" data-year="2025" onclick="showYear('2025',this)">2025<span class="year-count">45</span></button><button class="year-tab" data-year="2024" onclick="showYear('2024',this)">2024<span class="year-count">10</span></button><button class="year-tab" data-year="2023" onclick="showYear('2023',this)">2023<span class="year-count">46</span></button><button class="year-tab" data-year="2017" onclick="showYear('2017',this)">2017<span class="year-count">4</span></button>
+    <button class="year-tab" data-year="2026" onclick="showYear('2026',this)">2026<span class="year-count">70</span></button><button class="year-tab" data-year="2025" onclick="showYear('2025',this)">2025<span class="year-count">45</span></button><button class="year-tab" data-year="2024" onclick="showYear('2024',this)">2024<span class="year-count">10</span></button><button class="year-tab" data-year="2023" onclick="showYear('2023',this)">2023<span class="year-count">46</span></button><button class="year-tab" data-year="2017" onclick="showYear('2017',this)">2017<span class="year-count">4</span></button>
   </div>
 
   <!-- Year panels -->
   
   <div class="year-panel" data-year="2026">
-    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:20%"></div><div class="bar-label">一月</div><div class="bar-count">3</div></div><div class="bar-cell"><div class="bar-fill" style="height:60%"></div><div class="bar-label">二月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">三月</div><div class="bar-count">15</div></div><div class="bar-cell"><div class="bar-fill" style="height:20%"></div><div class="bar-label">四月</div><div class="bar-count">3</div></div><div class="bar-cell"><div class="bar-fill" style="height:26%"></div><div class="bar-label">五月</div><div class="bar-count">4</div></div><div class="bar-cell"><div class="bar-fill" style="height:40%"></div><div class="bar-label">六月</div><div class="bar-count">6</div></div></div>
+    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:13%"></div><div class="bar-label">一月</div><div class="bar-count">3</div></div><div class="bar-cell"><div class="bar-fill" style="height:40%"></div><div class="bar-label">二月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:68%"></div><div class="bar-label">三月</div><div class="bar-count">15</div></div><div class="bar-cell"><div class="bar-fill" style="height:40%"></div><div class="bar-label">四月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">五月</div><div class="bar-count">22</div></div><div class="bar-cell"><div class="bar-fill" style="height:54%"></div><div class="bar-label">六月</div><div class="bar-count">12</div></div></div>
     <div class="thinker-row" id="tl-thinker-row-2026">
       <button class="thinker-chip active" data-person="all" onclick="tlFilter('2026','all',this)">
         <div class="thinker-avatar" style="background:#1e40af">全部</div>
@@ -66,7 +66,7 @@
         <div class="thinker-avatar">GH</div>
         <div>
           <div class="thinker-name">Geoffrey</div>
-          <div class="thinker-count">4 条</div>
+          <div class="thinker-count">6 条</div>
         </div>
       </button>
 
@@ -77,6 +77,16 @@
         <div>
           <div class="thinker-name">Howard</div>
           <div class="thinker-count">2 条</div>
+        </div>
+      </button>
+
+      <button class="thinker-chip" data-person="azeem-azhar"
+              style="--person-color:#0f766e"
+              onclick="tlFilter('2026','azeem-azhar',this)">
+        <div class="thinker-avatar">AA</div>
+        <div>
+          <div class="thinker-name">Azeem</div>
+          <div class="thinker-count">28 条</div>
         </div>
       </button>
     </div>
@@ -617,14 +627,128 @@
         </div>
       </div>
       <div class="tl-quarter">
-        <div class="tl-quarter-header">2026 Q2 · 13 条</div>
+        <div class="tl-quarter-header">2026 Q2 · 43 条</div>
         
         <div class="tl-month">
           <div class="tl-month-header">
             <span class="tl-month-label">2026年 四月</span>
-            <span class="tl-month-count">3 条观点</span>
+            <span class="tl-month-count">9 条观点</span>
           </div>
           <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-labor defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">在算力受限的现实约束下，中国AI实验室正将‘每token智能效率’转化为设计范式，这代表全球AI发展路径的根本性分叉。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2026-04-26</span>
+      <a href="https://www.exponentialview.co/p/ev-571" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-labor techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">人类价值正不可逆地向‘关系型领域’迁移——即那些价值本质上依赖于人之在场、判断与不完美性的劳动。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2026-04-26</span>
+      <a href="https://www.exponentialview.co/p/ev-571" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">硬件迭代速度本质上是组织现象而非工程现象，取决于反馈回路架构与并行实验规模</p>
+    <div class="theme-row"><span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2026-04-24</span>
+      <a href="https://www.exponentialview.co/p/ukraine-seven-day-drone-advantage" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">任何组织若将硬件研发视为能力问题而非结构性问题，必将误诊——移植指标而不移植结构，无法获得速度与成本优势 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2026-04-24</span>
+      <a href="https://www.exponentialview.co/p/ukraine-seven-day-drone-advantage" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">苹果任命硬件主管接任CEO，标志着其押注‘混合计算’：将常规AI任务下沉至边缘设备，重载任务保留在云端。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2026-04-21</span>
+      <a href="https://www.exponentialview.co/p/apples-ai-bet-got-a-ceo" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--change">变化</span>
+    </div>
+    <p class="opinion-text">作者公开承认自己此前‘看衰苹果AI’的判断错误，转而认为用户在苹果设备上高频切换大模型的行为，已构成对其AI生态价值的隐性验证。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2026-04-21</span>
+      <a href="https://www.exponentialview.co/p/apples-ai-bet-got-a-ceo" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
   <a href="opinions/c7ea95f3622b9f21/index.html" class="opinion-card card-clickable"
        style="--person-color:#1d4ed8;--person-rgb:29,78,216"
        data-person="demis-hassabis"
@@ -685,9 +809,199 @@
         <div class="tl-month">
           <div class="tl-month-header">
             <span class="tl-month-label">2026年 五月</span>
-            <span class="tl-month-count">4 条观点</span>
+            <span class="tl-month-count">22 条观点</span>
           </div>
           <div class="opinion-grid">
+  <a href="opinions/986496925a7a0010/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">金融分析师因固守线性思维和均值回归假设，系统性低估AI相关企业的增长，这不是偶然失误而是认知范式失效。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-05-31</span>
+      <a href="opinions/986496925a7a0010/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/8c01600875c2dee2/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-agents ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">AI转型存在三个不可跳过的阶段：Stage 1（个体提效）、Stage 2（流程加速）、Stage 3（组织逻辑重构），当前绝大多数企业卡在Stage 2，无法实现规模化ROI</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2026-05-27</span>
+      <a href="opinions/8c01600875c2dee2/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/5323fe9c8bbc2869/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-labor risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">企业AI投资未显化于财报的根本原因，是组织决策逻辑与管理流程未随AI能力升级而重设——个体和流程层的提速被僵化的审批、协作与权力结构所吸收 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-05-27</span>
+      <a href="opinions/5323fe9c8bbc2869/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/8e26bd051ec340d6/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-agents risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI代理的token消耗存在‘幽灵token’现象，实际主动推理仅占15–20%，其余为不可见的上下文重读与工具调用开销，导致账单飙升与成本失控 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-05-25</span>
+      <a href="opinions/8e26bd051ec340d6/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/ad4827b6bc8cdc08/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-agents risk-management venture-capital">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">企业将沿‘成本管理阶梯’演进，从基础token追踪走向按团队、流程、客户归因的精细化单位经济核算，这是理解AI真实商业价值的前提 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Risk Management</span> <span class="theme-chip">Venture Capital</span></div>
+    <div class="card-foot">
+      <span>2026-05-25</span>
+      <a href="opinions/ad4827b6bc8cdc08/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/e4e33b9de68fc377/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI在科研领域最大红利不是加速单学科研究，而是打通因现代科学专业化而长期隔离的不同知识领域。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2026-05-24</span>
+      <a href="opinions/e4e33b9de68fc377/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/615bb255d9cab060/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="scientific-discovery ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI将重塑科学方法论本身——从假设生成、实验设计到分析迭代的完整闭环，而不仅是加快其中某一环节。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2026-05-24</span>
+      <a href="opinions/615bb255d9cab060/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/59ed8ee98cec9db0/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-labor risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI抵制浪潮已从抽象焦虑转向基于真实物理代价（如污染水、电价上涨、就业挤压）的 bipartisan 草根抵抗，这是不可逆的政治现实 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-05-23</span>
+      <a href="opinions/59ed8ee98cec9db0/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/9c0015cf8440f625/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">联邦政府在AI治理上已实质性失能，未来四年关键规则将由州级立法主导，催生大规模合规与诉讼产业，而非技术减速 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-05-23</span>
+      <a href="opinions/9c0015cf8440f625/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/8bc0e938ae1425fa/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI成本的不可预测性已构成企业财务治理的根本挑战，固定预算模式在token经济下彻底失效 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-05-18</span>
+      <a href="opinions/8bc0e938ae1425fa/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
   <a href="opinions/9f825ecb4e6317bb/index.html" class="opinion-card card-clickable"
        style="--person-color:#1d4ed8;--person-rgb:29,78,216"
        data-person="demis-hassabis"
@@ -762,12 +1076,164 @@
       <span>2026-05-17</span>
       <a href="opinions/3d30cf240316f922/index.html" class="source-link">深度解读 ✦</a>
     </div>
-  </a></div>
+  </a>
+
+  <a href="opinions/467d0ddc54d7823c/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Cerebras的IPO大幅上涨并非过热炒作，而是资本市场首次实质性确认AI推理存在真实、迫切且规模化的商业需求。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2026-05-15</span>
+      <a href="opinions/467d0ddc54d7823c/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/f224e1ad249e8814/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="scaling-laws">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">中国AI实验室单位算力产出的智能量是美国的4–7倍，出口管制意外催生了显著的效率护城河 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scaling Laws</span></div>
+    <div class="card-foot">
+      <span>2026-05-13</span>
+      <a href="opinions/f224e1ad249e8814/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/d5e36bf2b90b981a/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">摩尔定律的经济 bargain 已正式破裂：成本每晶体管不再下降，且光刻环节的‘每晶圆美元晶体管数’指标也于近年逆转 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2026-05-11</span>
+      <a href="opinions/d5e36bf2b90b981a/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/e37e5b0d61767b4c/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="techno-optimism market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">EUV曾短暂延缓但未能扭转经济拐点；High-NA若被头部代工厂弃用，标志半导体产业五十年成本下行范式终结 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2026-05-11</span>
+      <a href="opinions/e37e5b0d61767b4c/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/d57691313d2da29d/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-agents scaling-laws ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">若AI自我改进在2028年前成真，前沿实验室当前应已转向招聘‘研究放大器’而非纯研究人员，并超前囤积算力与基建。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Scaling Laws</span> <span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2026-05-10</span>
+      <a href="opinions/d57691313d2da29d/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <article class="opinion-card"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="scaling-laws risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">物理约束（电力、土地、芯片、电工）在未来三年内将比算法优化更关键地制约AI训练进展。</p>
+    <div class="theme-row"><span class="theme-chip">Scaling Laws</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-05-10</span>
+      <a href="https://www.exponentialview.co/p/ev-573" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">当前AI算力危机的真正风险不是投资过度，而是投资严重不足；企业级真实需求尚未释放，一旦启动将加剧短缺 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-05-04</span>
+      <a href="https://www.exponentialview.co/p/data-to-start-your-week-compute-crunch-may-2026" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-labor risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI导致劳动力市场剧变的‘理论’本身正在驱动现实决策，如招聘冻结，这种信念自我实现的风险比技术实际能力更紧迫。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-05-03</span>
+      <a href="https://www.exponentialview.co/p/ev-572" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
         </div>
         <div class="tl-month">
           <div class="tl-month-header">
             <span class="tl-month-label">2026年 六月</span>
-            <span class="tl-month-count">6 条观点</span>
+            <span class="tl-month-count">12 条观点</span>
           </div>
           <div class="opinion-grid">
   <a href="opinions/81bbd26ae9250c1a/index.html" class="opinion-card card-clickable"
@@ -843,6 +1309,120 @@
     <div class="card-foot">
       <span>2026-06-07</span>
       <a href="opinions/b454edb76d3df2ea/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/07fd3ac65dab377a/index.html" class="opinion-card card-clickable"
+       style="--person-color:#d97706;--person-rgb:217,119,6"
+       data-person="geoffrey-hinton"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#d97706">
+        <span class="person-dot">G</span>
+        Geoffrey
+      </span>
+      <span class="type-badge type--change">变化</span>
+    </div>
+    <p class="opinion-text">AI超越人类智能的时间远早于预期，他原先预估需30至50年，现已彻底放弃该判断 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-06-07</span>
+      <a href="opinions/07fd3ac65dab377a/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/c6dd097efe559a4e/index.html" class="opinion-card card-clickable"
+       style="--person-color:#d97706;--person-rgb:217,119,6"
+       data-person="geoffrey-hinton"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#d97706">
+        <span class="person-dot">G</span>
+        Geoffrey
+      </span>
+      <span class="type-badge type--change">变化</span>
+    </div>
+    <p class="opinion-text">AI超越人类智能的时间远早于预期，已从原先预估的30–50年大幅提前，他本人不再认为这还很遥远 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-06-07</span>
+      <a href="opinions/c6dd097efe559a4e/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/ac158a5476932956/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-safety startup-ecosystem">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI驱动的自动化并非引发‘递归自我改进’式失控风险，而是人类主导的战略加速，其上限受商业现实（资本、芯片、电力）自然约束。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Startup Ecosystem</span></div>
+    <div class="card-foot">
+      <span>2026-06-07</span>
+      <a href="opinions/ac158a5476932956/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/06063a914d509036/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="startup-ecosystem ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">AI正实质性降低创业门槛，使‘平庸但可用’的AI代理（如法律、财务、营销角色）替代零配置成为可能，从而催生新一轮创业潮。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2026-06-07</span>
+      <a href="opinions/06063a914d509036/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/d1c930bc357c82d2/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-agents market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">从捆绑定价转向用量计费并非收缩市场，而是通过将成本与价值显性挂钩，推动AI市场向更健康、可持续的规模化增长演进。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2026-06-03</span>
+      <a href="opinions/d1c930bc357c82d2/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/872bf60ee673a67a/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">当前AI热潮是真实的客户驱动型繁荣，而非泡沫；仅一个指标亮红灯，尚不构成泡沫条件 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2026-06-01</span>
+      <a href="opinions/872bf60ee673a67a/index.html" class="source-link">深度解读 ✦</a>
     </div>
   </a>
 
@@ -3075,7 +3655,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-06-09 22:37 UTC</div>
+  <div>最后更新：2026-06-09 23:24 UTC</div>
 </footer>
 <script>
 const activeYearPersons = {};
