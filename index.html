@@ -30,11 +30,11 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · THINKER RADAR</div>
     <h1 class="hero-title">精选情报</h1>
-    <div class="hero-date">更新于 2026-06-09 22:06 UTC</div>
+    <div class="hero-date">更新于 2026-06-09 22:23 UTC</div>
     <div class="hero-stats">
-      <div class="stat-item"><span class="stat-num">6</span><span class="stat-label">精选观点</span></div>
-      <div class="stat-item"><span class="stat-num">6</span><span class="stat-label">重要信号</span></div>
-      <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">思想者</span></div>
+      <div class="stat-item"><span class="stat-num">8</span><span class="stat-label">精选观点</span></div>
+      <div class="stat-item"><span class="stat-num">8</span><span class="stat-label">重要信号</span></div>
+      <div class="stat-item"><span class="stat-num">3</span><span class="stat-label">思想者</span></div>
     </div>
   </div>
 </section>
@@ -75,7 +75,7 @@
       <div class="thinker-avatar">GH</div>
       <div>
         <div class="thinker-name">Geoffrey</div>
-        <div class="thinker-count">0 条观点</div>
+        <div class="thinker-count">2 条观点</div>
       </div>
     </button>
 
@@ -136,10 +136,10 @@
     <button class="filter-btn active" data-theme="all" onclick="filterTheme('all',this)">全部</button>
     <button class="filter-btn" data-theme="scientific-discovery" onclick="filterTheme('scientific-discovery',this)">Scientific Discovery via AI <span style="opacity:.6;font-size:.65rem">(3)</span></button>
     <button class="filter-btn" data-theme="risk-management" onclick="filterTheme('risk-management',this)">Risk Management <span style="opacity:.6;font-size:.65rem">(3)</span></button>
+    <button class="filter-btn" data-theme="ai-safety" onclick="filterTheme('ai-safety',this)">AI Safety <span style="opacity:.6;font-size:.65rem">(2)</span></button>
+    <button class="filter-btn" data-theme="agi" onclick="filterTheme('agi',this)">AGI <span style="opacity:.6;font-size:.65rem">(2)</span></button>
     <button class="filter-btn" data-theme="ai-agents" onclick="filterTheme('ai-agents',this)">AI Agents <span style="opacity:.6;font-size:.65rem">(2)</span></button>
     <button class="filter-btn" data-theme="market-cycles" onclick="filterTheme('market-cycles',this)">Market Cycles <span style="opacity:.6;font-size:.65rem">(2)</span></button>
-    <button class="filter-btn" data-theme="agi" onclick="filterTheme('agi',this)">AGI <span style="opacity:.6;font-size:.65rem">(1)</span></button>
-    <button class="filter-btn" data-theme="ai-safety" onclick="filterTheme('ai-safety',this)">AI Safety <span style="opacity:.6;font-size:.65rem">(1)</span></button>
   </div>
 
   <!-- All curated opinions in one grid -->
@@ -148,10 +148,52 @@
     <h2 class="section-title">
       <span class="title-dot title-dot--gold"></span>
       精选观点
-      <span class="section-count">6 条 · 按信号强度排序</span>
+      <span class="section-count">8 条 · 按信号强度排序</span>
     </h2>
     <div class="opinion-grid opinion-grid--wide" id="curated-grid">
       
+  <a href="opinions/3aee15736d1ee0dd/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#d97706;--person-rgb:217,119,6"
+           data-person="geoffrey-hinton"
+           data-themes="ai-safety">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#d97706">
+        <span class="person-dot">G</span>
+        Geoffrey
+      </span>
+      <span class="type-badge type--claim">主张</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">AI生成的虚假图文将导致人类社会丧失辨别真相的能力，‘人们将再也无法知道什么是真实的’</p>
+    <p class="opinion-context">对认知层系统性风险的断言</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span></div>
+    <div class="card-foot">
+      <span>2026-06-07</span>
+      
+    </div>
+  </a>
+
+  <a href="opinions/81bbd26ae9250c1a/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#d97706;--person-rgb:217,119,6"
+           data-person="geoffrey-hinton"
+           data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#d97706">
+        <span class="person-dot">G</span>
+        Geoffrey
+      </span>
+      <span class="type-badge type--change">变化</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">AI超越人类智力的时间远早于预期，已从原先预估的30–50年大幅提前，他本人不再认为这遥不可及</p>
+    <p class="opinion-context">对AGI出现时间的自我修正</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-06-07</span>
+      
+    </div>
+  </a>
+
   <a href="opinions/9f825ecb4e6317bb/index.html" class="opinion-card opinion-card--notable card-clickable"
            style="--person-color:#1d4ed8;--person-rgb:29,78,216"
            data-person="demis-hassabis"
@@ -285,7 +327,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-06-09 22:06 UTC</div>
+  <div>最后更新：2026-06-09 22:23 UTC</div>
 </footer>
 <script>
 let activePerson = 'all';
