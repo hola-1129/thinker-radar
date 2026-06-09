@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The true value of scaling in AI lies not in performing exist · ThinkerRadar</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body style="--person-color:#1d4ed8">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../../index.html" class="logo">
+      <div class="logo-icon">📡</div>
+      <div>
+        <div class="logo-text">ThinkerRadar</div>
+        <div class="logo-sub">思想雷达</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="../../index.html" class="nav-link">今日情报</a>
+      <a href="../../timeline.html" class="nav-link">时间轴</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Detail Hero -->
+<section class="detail-hero" style="background:linear-gradient(140deg,#0f172a 0%,#1d4ed8 100%)">
+  <div class="container">
+    <div class="breadcrumb" style="padding-top:0;margin-bottom:16px">
+      <a href="../../index.html">ThinkerRadar</a>
+      <span>›</span>
+      <a href="../../profiles/demis-hassabis.html">Demis Hassabis</a>
+      <span>›</span>
+      <span>观点详情</span>
+    </div>
+
+    <div class="detail-signal-badge">
+      <span class="signal-dot signal-dot--strong"></span>
+      强信号 &nbsp;·&nbsp; <span class="type-badge type--position" style="padding:1px 7px">立场</span>
+    </div>
+
+    <p class="detail-pull-quote">The true value of scaling in AI lies not in performing existing tasks better, but in generating novel ideas and discovering previously unknown solutions to scientific problems</p>
+
+    <p class="detail-key-thesis">AI Scaling的真正价值在于涌现科学新发现，而非优化旧任务。</p>
+
+    <div class="detail-meta-row">
+      <span style="background:rgba(255,255,255,.15);border-radius:20px;padding:3px 10px 3px 6px;display:inline-flex;align-items:center;gap:6px">
+        <span style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.25);display:inline-flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700">DH</span>
+        Demis Hassabis
+      </span>
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/how-a-gemma-model-helped-discover-a-new-potential-cancer-therapy-pathway/" target="_blank" rel="noopener">原文：How a Gemma model helped discover a new potential </a>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="container page-body">
+
+  
+<div class="thesis-banner">
+  <div class="thesis-icon">🎯</div>
+  <div>
+    <div class="thesis-label">核心论点</div>
+    <div class="thesis-text">AI Scaling的真正价值在于涌现科学新发现，而非优化旧任务。</div>
+  </div>
+  <div class="thesis-horizon">
+    <div class="horizon-label">时间维度</div>
+    <div class="horizon-value">中期（6-18个月）</div>
+  </div>
+</div>
+  
+<div class="analysis-card analysis-card--translation" style="margin-bottom:20px">
+  <div class="analysis-card-header">
+    <span class="analysis-card-icon">🌐</span>
+    <span class="analysis-card-title">原文翻译</span>
+  </div>
+  <div class="analysis-card-body">
+    <div class="analysis-prose"><p>今日，作为与耶鲁大学研究合作的一部分，我们发布了Cell2Sentence-Scale 27B（C2S-Scale），这是一个拥有270亿参数的全新基础模型，专为理解单细胞语言而设计。C2S-Scale基于Gemma开源模型家族构建，代表了单细胞分析的新前沿。</p>
+<p>这一发布标志着AI在科学领域的里程碑。C2S-Scale生成了关于癌细胞行为的全新假设，随后我们在活细胞实验中验证了其预测。这一发现揭示了开发抗癌疗法的一条极具前景的新途径。</p>
+<p>此次发布建立在今年早些时候我们的工作基础之上，当时我们证明了生物模型遵循明确的缩放定律（Scaling laws）——就像自然语言一样，更大的模型在生物学任务上表现更好。这引出了一个关键问题：更大的模型仅仅是更擅长现有任务，还是能获得全新的能力？缩放的真正希望在于创造新思想和发现未知。</p>
+<p>C2S-Scale 27B是如何工作的？癌症免疫疗法的一个重大挑战是许多肿瘤是“冷”肿瘤——对身体的免疫系统不可见。使其变“热”的一个关键策略是迫使它们通过抗原呈递（antigen presentation）过程展示免疫触发信号。</p>
+<p>我们给新模型分配了一项任务：寻找一种条件性放大器（conditional amplifier）药物，该药物仅在特定的“免疫上下文阳性”环境中增强免疫信号（即存在低水平干扰素但不足以诱导抗原呈递的环境）。这需要一种看似是规模涌现能力的条件推理水平；我们较小的模型无法解决这种依赖上下文的效应。</p>
+<p>为此，我们设计了双上下文虚拟筛选（dual-context virtual screen）。我们在“免疫上下文阳性”（真实患者样本）和“免疫上下文中性”（无免疫背景的孤立细胞系）两个阶段模拟了4000多种药物的效果。模型预测出激酶CK2抑制剂silmitasertib (CX-4945) 具有显著的“上下文分裂”效应，预测其能强烈增加抗原呈递。</p></div>
+  </div>
+</div><div class="analysis-grid">
+  <div class="analysis-card analysis-card--industry">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">🔬</span>
+      <span class="analysis-card-title">行业专家解析</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p>在AI4S和计算生物学一线，DeepMind的这一成果具有极强的技术示范效应。关于“Scaling law在生物领域存在”在业内已有共识，但“模型能否通过Scaling涌现出发现全新生物学机制的能力”一直是争议焦点。C2S-Scale通过发现CX-4945的“上下文分裂”效应，用真实的湿实验数据自证了这一点，这在行业内具有极高的共识度和说服力。</p>
+<p><strong>执行层面的核心挑战在于数据质量与上下文推理</strong>。生物系统不是简单的线性映射，单细胞数据存在极高的噪声和批次效应。文中提到的“条件推理（conditional reasoning）”是最大难点：模型不仅要理解单一细胞的状态，还要理解细胞与微环境（如低水平干扰素）的复杂交互。这要求基础模型不仅参数量大，其架构必须能处理极其复杂的多模态和图结构/序列混合数据，目前除了DeepMind和少数头部实验室，多数团队在工程实现上仍面临巨大瓶颈。</p>
+<p><strong>被低估的关键细节是“湿实验验证的成本与周期”</strong>。业界往往惊叹于AI在几秒钟内筛选4000种药物，但被低估的是，为了验证这些“surprising hits（令人惊讶的命中）”，需要在真实的患者样本和细胞系中进行极其昂贵且耗时的生物学实验。AI极大地压缩了“假设生成”的时间，但“假设验证”的物理时间并未缩短。</p>
+<p><strong>被高估的细节是模型的“自主性”</strong>。目前C2S-Scale仍是一个强大的“假设生成器（Hypothesis generator）”，而非完全自主的“科学家”。它需要人类专家精心设计“双上下文虚拟筛选”的Prompt和实验框架。在现阶段，AI是极其强大的“力量乘数”，但科学直觉和实验设计的核心灵魂依然是人类。</p></div>
+    </div>
+  </div>
+
+  <div class="analysis-card analysis-card--predict">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">📈</span>
+      <span class="analysis-card-title">未来趋势展望</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p>基于DeepMind在基础模型科学发现上的验证及其向AI Agent演进的战略信号，未来1-2年内AI for Science领域将呈现以下可验证的趋势：</p>
+<p><strong>6个月内（短期）</strong>：单细胞和空间转录组学大模型将成为顶尖药企和科研机构的“标配”基础设施。我们将看到更多类似耶鲁大学与DeepMind的合作官宣，头部CXO企业（如药明康德、康龙化成）将加速部署私有化的生物大模型，以提供“AI辅助靶点发现”作为增值服务。同时，针对生物数据噪声处理的新型数据清洗和合成算法公司将迎来一波融资小高峰。</p>
+<p><strong>1-2年内（中期）</strong>：AI生成的“条件性”或“上下文相关”的新机制药物（如本次发现的免疫上下文放大器）将陆续进入IND（新药临床试验申请）阶段。这将是检验AI科学发现成色的关键节点。同时，呼应Demis 2026年的观点，具备文献自动综合、实验方案自动设计功能的“科研AI Agent”将在大型药企的研发部门实现规模化落地，真正开始接管繁琐的数据分析工作。</p>
+<p><strong>不确定性与风险因素</strong>：最大的风险在于“体外（in vitro）到体内（in vivo）”的转化鸿沟。AI在细胞层面发现的精妙机制，在复杂的动物模型或人体中可能因系统性毒性或药代动力学缺陷而失败。此外，随着模型对高质量数据依赖的加深，全球范围内关于人类基因组、单细胞等敏感生物数据的隐私合规监管将大幅收紧，这可能成为限制Scaling进一步突破的隐性天花板。</p></div>
+    </div>
+  </div>
+
+  <div class="analysis-card analysis-card--invest">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">💰</span>
+      <span class="analysis-card-title">投资建议</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p>从资本配置角度来看，DeepMind此次通过C2S-Scale验证“Scaling产生新科学发现”，将直接重塑AI for Science（AI4S）和创新药研发赛道的估值逻辑。受影响的不仅是底层算力，更核心的是<strong>具备高质量专有生物数据资产和“湿实验（Wet-lab）验证闭环”的Biotech及CRO企业</strong>。</p>
+<p><strong>具体投资机会</strong>：首先，拥有海量、高质量单细胞/空间转录组学专有数据，且具备自动化高通量实验验证能力的公司（如Recursion Pharmaceuticals、Schrödinger，以及国内具备类似数据闭环的晶泰科技等）将迎来显著的估值溢价。其次，针对高维生物数据进行模型微调的垂直AI基础设施提供商将迎来订单增长。时间节点上，随着该论文及后续临床前数据的披露，未来6-12个月内，相关标的在二级市场或一级市场融资中将享受“AI科学发现”溢价。</p>
+<p><strong>风险点</strong>：市场极易高估AI直接输出“完美药物”的能力。投资者必须警惕那些缺乏底层数据壁垒、仅靠调用开源API进行“套壳”分子生成的AI制药公司，它们将面临严重的同质化出清。此外，从“AI预测新靶点/新机制”到“人体临床验证”存在巨大的“死亡之谷”，脱靶毒性和药代动力学（PK/PD）问题仍是AI目前难以完全跨越的鸿沟。</p>
+<p><strong>市场反应路径</strong>：短期内，市场会因“AI发现抗癌新途径”的标题效应产生情绪化炒作；但中期（1-2年）将回归理性，资金将向真正能跑通“干实验预测-湿实验验证-临床推进”全链路的头部企业集中。</p></div>
+    </div>
+  </div>
+
+  <div class="analysis-card analysis-card--history">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">📜</span>
+      <span class="analysis-card-title">历史言论对比</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p>对比Demis Hassabis在2025年10月（本次观点）与2026年上半年的系列言论，可以清晰地看到其思想路线的<strong>延续与战略升维</strong>。</p>
+<p>2025年10月，他通过C2S-Scale强调“Scaling的真正价值在于产生新想法和发现未知”，这是在<strong>基础模型（Foundation Model）层面</strong>验证AI在垂直科学领域的“涌现”能力。而到了2026年4月至5月，他的观点演进为“科学突破将越来越多地来自通用AI Agent”、“AI应作为力量乘数”、“主要瓶颈在于文献和数据的综合”。</p>
+<p><strong>这一转变传递了明确的信号</strong>：DeepMind的战略重心正在从“单点科学突破（如AlphaFold预测结构、C2S-Scale发现新机制）”向“系统性科研流程重构（AI Agent化）”转移。2025年的单细胞模型是技术基石，证明了AI能“发现未知”；2026年的Agent战略则是商业化与规模化路径，旨在通过Agent解决科学界“数据爆炸”的宏观瓶颈。这表明Demis认为，仅靠扩大模型参数（Scaling）已不足以解决所有科学问题，必须结合Agent的自主规划、工具调用和文献综合能力，才能实现真正的科学范式转移。</p></div>
+    </div>
+  </div></div>
+  
+<section class="section-block">
+  <h2 class="section-title">
+    <span class="title-dot"></span>
+    该人物近期其他观点
+    <span class="section-count">6 条</span>
+  </h2>
+  <div class="past-opinions">
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">Scientific breakthroughs will increasingly come from general AI agents rather than narrow, specialized models, and these agents should empower researchers across all scientific fields</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">AI should serve as a force multiplier for human scientific ingenuity by handling complex, time-consuming tasks, freeing researchers to focus on identifying the most impactful problems</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--claim" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">主张</span></div>
+      <div class="past-opinion-text">The primary bottleneck in modern science is not the generation of ideas but the manual synthesis and analysis of the exponentially growing body of scientific literature and data</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">Responsible development and deployment of AI tools for science requires deep collaboration with the scientific community, including validation from trusted testers ranging from PhD students to Nobel laureates</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-04-21<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">AI is one of the most transformative technologies of our time, capable of delivering new products and services and scientific breakthroughs that improve the lives of billions of people</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-04-21<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">AI must be diffused responsibly across industries and remain guided by human expertise to secure benefits and solve critical global challenges</div>
+    </div></div>
+</section>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
+  <div>最后更新：2026-06-09 20:42 UTC</div>
+</footer>
+</body>
+</html>

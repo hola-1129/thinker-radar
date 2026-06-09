@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current large language models significantly underperform at  · ThinkerRadar</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body style="--person-color:#1d4ed8">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../../index.html" class="logo">
+      <div class="logo-icon">📡</div>
+      <div>
+        <div class="logo-text">ThinkerRadar</div>
+        <div class="logo-sub">思想雷达</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="../../index.html" class="nav-link">今日情报</a>
+      <a href="../../timeline.html" class="nav-link">时间轴</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Detail Hero -->
+<section class="detail-hero" style="background:linear-gradient(140deg,#0f172a 0%,#1d4ed8 100%)">
+  <div class="container">
+    <div class="breadcrumb" style="padding-top:0;margin-bottom:16px">
+      <a href="../../index.html">ThinkerRadar</a>
+      <span>›</span>
+      <a href="../../profiles/demis-hassabis.html">Demis Hassabis</a>
+      <span>›</span>
+      <span>观点详情</span>
+    </div>
+
+    <div class="detail-signal-badge">
+      <span class="signal-dot signal-dot--strong"></span>
+      强信号 &nbsp;·&nbsp; <span class="type-badge type--prediction" style="padding:1px 7px">预测</span>
+    </div>
+
+    <p class="detail-pull-quote">Current large language models significantly underperform at game-playing compared to specialized game engines and general game-playing AI, and closing this gap while eventually achieving superhuman performance beyond current capabilities is a meaningful long-term objective</p>
+
+    <p class="detail-key-thesis">游戏竞技场成为评估AGI战略推理与通用智能的新标尺。</p>
+
+    <div class="detail-meta-row">
+      <span style="background:rgba(255,255,255,.15);border-radius:20px;padding:3px 10px 3px 6px;display:inline-flex;align-items:center;gap:6px">
+        <span style="width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.25);display:inline-flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700">DH</span>
+        Demis Hassabis
+      </span>
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/rethinking-how-we-measure-ai-intelligence/" target="_blank" rel="noopener">原文：Rethinking how we measure AI intelligence</a>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="container page-body">
+
+  
+<div class="thesis-banner">
+  <div class="thesis-icon">🎯</div>
+  <div>
+    <div class="thesis-label">核心论点</div>
+    <div class="thesis-text">游戏竞技场成为评估AGI战略推理与通用智能的新标尺。</div>
+  </div>
+  <div class="thesis-horizon">
+    <div class="horizon-label">时间维度</div>
+    <div class="horizon-value">长期（1年以上）</div>
+  </div>
+</div>
+  
+<div class="analysis-card analysis-card--translation" style="margin-bottom:20px">
+  <div class="analysis-card-header">
+    <span class="analysis-card-icon">🌐</span>
+    <span class="analysis-card-title">原文翻译</span>
+  </div>
+  <div class="analysis-card-body">
+    <div class="analysis-prose"><p><strong>重新思考我们如何衡量AI智能</strong></p>
+<p>当前AI基准测试正难以跟上现代模型的发展步伐。尽管它们在衡量模型特定任务表现上很有用，但很难确定基于互联网数据训练的模型是真正在解决问题，还是仅仅记住了见过的答案。随着模型在某些基准上接近100%的饱和，它们在揭示有意义的性能差异方面也变得不再有效。我们继续投资更具挑战性的新基准，但在通往通用智能的道路上，我们需要不断寻找新的评估方法。近期向动态、人类评判测试的转变解决了记忆和饱和问题，但反过来又因人类偏好的固有主观性带来了新的困难。</p>
+<p>在继续演进当前基准的同时，我们也在不断测试新方法。因此，今天我们推出 <strong>Kaggle Game Arena</strong>：一个全新的公共AI基准测试平台，AI模型在此进行战略游戏的一对一竞争，提供可验证且动态的能力衡量。</p>
+<p><strong>为何游戏是有意义的评估基准</strong></p>
+<p>游戏提供了清晰、明确的成功信号。其结构化特性和可衡量结果使其成为评估模型和智能体（Agents）的完美试验场。它们迫使模型展示战略推理、长期规划和针对智能对手的动态适应等技能，提供其通用问题解决智能的稳健信号。游戏的价值还在于其可扩展性——难度随对手智能提升而增加——以及我们检查和可视化模型“推理”的能力，这让我们得以一窥其战略思考过程。</p>
+<p>像Stockfish这样的专业引擎和AlphaZero这样的通用游戏AI模型多年来已能以超人水平玩游戏，毫无疑问会击败每一个前沿模型。然而，当今的大语言模型（LLMs）并非为专精特定游戏而构建，因此表现远不及此。虽然模型的直接挑战是缩小这一差距，但长期来看，我们希望它们能达到超越当前可能的水平。通过不断增加的新环境，我们可以继续挑战它们。</p>
+<p><strong>Game Arena如何促进公平开放的评估</strong></p>
+<p>Game Arena基于Kaggle构建，提供公平、标准化的评估环境。为保持透明，游戏控制框架（game harnesses，连接模型与环境的框架）及游戏环境均开源。最终排名通过严格的全循环赛（all-play-all）系统决定，模型对之间进行大量比赛以确保统计结果的稳健性。</p></div>
+  </div>
+</div><div class="analysis-grid">
+  <div class="analysis-card analysis-card--industry">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">🔬</span>
+      <span class="analysis-card-title">行业专家解析</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p>在技术一线，业界对“苦静态基准久矣”有着极强共识。传统的MMLU、HumanEval等基准已被严重污染，且无法衡量模型的长期规划能力。Game Arena通过引入完全可验证、无主观偏差的博弈环境，精准击中了当前评测体系的痛点。这种从“考记忆”到“考实战”的转变，在学术界和工业界都获得了高度认可，是评测演进的必然方向。</p>
+<p>然而，执行层面的最大挑战在于“LLM的底层架构与游戏AI的本质冲突”。LLM是基于Next-token prediction的概率模型，缺乏真正的状态空间搜索能力；而AlphaZero依赖蒙特卡洛树搜索（MCTS）和强化学习。要让纯LLM在Game Arena中击败专业引擎，不能仅靠预训练，必须引入外挂的规划模块或彻底重构为具备System 2思考能力的架构。这是目前一线研发中最难啃的骨头。</p>
+<p>被低估的关键细节是“游戏控制框架（game harnesses）的开源与标准化”。这不仅仅是提供一个游戏，而是定义了AI与环境交互的API标准。谁掌握了交互标准，谁就掌握了未来Agent生态的入口。此外，复杂游戏中的“可解释性”往往被高估，在极高维度的状态空间中，人类其实很难真正看懂AI的“战略思考”，这更多是一种降低人类认知门槛的营销话术，实际落地中仍需依赖自动化验证工具。</p></div>
+    </div>
+  </div>
+
+  <div class="analysis-card analysis-card--predict">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">📈</span>
+      <span class="analysis-card-title">未来趋势展望</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p>6个月内，Kaggle Game Arena将发布首期权威排行榜，引发新一轮“打榜”热潮。市场焦点将从“语言理解与生成”迅速转移到“环境交互与长期规划”。各大模型厂商将紧急调整研发重心，推出专门针对Game Arena优化的Agent模型，甚至会出现专门针对博弈环境微调的“游戏特化版”模型，资本市场将围绕首期榜单进行激烈的估值博弈。</p>
+<p>1-2年的中期演变中，Game Arena将引入更复杂的非完全信息博弈、多人游戏以及结合物理引擎的3D环境。为了应对这些挑战，LLM将普遍集成类似AlphaZero的搜索算法或内部世界模型，形成“LLM+MCTS”或“LLM+RL”的混合架构。这将推动AI从单纯的“快思考（System 1）”向具备深度推演的“慢思考（System 2）”演进，彻底改变现有大模型的底层计算范式。</p>
+<p>不确定性与风险在于“古德哈特定律（Goodhart's Law）”的重演。一旦Game Arena成为衡量AGI的核心指标，模型厂商可能会通过过拟合特定游戏的元策略（meta-strategy）来刷分，导致分数不再代表真实的通用智能。此外，过度沉迷于游戏基准，可能会分散业界对现实世界模糊任务（如复杂代码工程、科学文献综合）的注意力，延缓AGI在真实物理和商业世界的落地进程。</p></div>
+    </div>
+  </div>
+
+  <div class="analysis-card analysis-card--invest">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">💰</span>
+      <span class="analysis-card-title">投资建议</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p>AI评测基础设施与Agent沙盒赛道迎来价值重估。Hassabis推出Kaggle Game Arena标志着AI评测从“静态知识问答”向“动态环境交互”的范式转移。这将直接利好提供AI Agent仿真环境、强化学习训练平台以及自动化评测基础设施的初创公司（如Scale AI，以及专注于数字孪生和仿真引擎的企业）。资本应提前布局那些能够为AI提供高保真、可验证交互环境的“卖水人”。</p>
+<p>大模型厂商的竞争焦点将向“System 2”推理与规划能力倾斜。纯自回归的LLM在Game Arena中难以匹敌AlphaZero，这意味着市场将重新评估那些在逻辑推理、长期规划和Agent框架上投入更多的公司。具备强大“世界模型”或集成搜索/规划算法（如MCTS）的模型将获得更高的估值溢价，而仅靠堆砌参数和上下文长度的“大力出奇迹”路线将面临估值折价。</p>
+<p>游戏引擎与AI融合的商业化将加速。由于Game Arena强调游戏环境的可扩展性和可视化，Unity、Epic Games（Unreal Engine）等游戏引擎巨头若能将其物理引擎和渲染能力与AI评测深度绑定，将开辟新的B端AI训练数据与仿真市场。建议关注这些传统游戏技术公司向AI基础设施转型的期权价值。</p>
+<p>风险提示：若模型厂商过度针对Game Arena进行“应试教育”（刷榜），可能导致基准失效。投资者需警惕那些仅靠穷举算力在特定游戏上刷分，但缺乏底层通用推理架构创新的标的。真正的Alpha在于解决LLM底层规划缺陷的架构创新，而非单纯的工程调优。</p></div>
+    </div>
+  </div>
+
+  <div class="analysis-card analysis-card--history">
+    <div class="analysis-card-header">
+      <span class="analysis-card-icon">📜</span>
+      <span class="analysis-card-title">历史言论对比</span>
+    </div>
+    <div class="analysis-card-body">
+      <div class="analysis-prose"><p>这一观点是Hassabis长期技术哲学的螺旋式延续，而非矛盾。在2026年5月17日的观点中，他强调“科学突破将越来越多地来自通用AI agents”，而Game Arena正是为了评估和训练这种具备“战略推理和长期规划”的底层Agent能力。从AlphaFold解决科学问题，到Game Arena评估通用Agent，底层逻辑一脉相承，即通过解决高复杂度博弈来提炼通用智能。</p>
+<p>同时，这也呼应了他在2026年4月21日指出的“AI经济潜力与企业实施之间存在巨大差距（仅25%成功规模化）”。企业不敢规模化部署AI，核心痛点在于缺乏对AI在复杂、动态任务中可靠性的验证。Game Arena通过提供“可验证、动态”的评估，正是为了建立这种信任，从而推动AI从实验室走向规模化生产。</p>
+<p>这种“退回”游戏领域的表象下，传递出DeepMind对当前LLM路线的深刻反思：仅靠扩大语言模型的上下文和参数量，无法自然涌现出真正的通用规划能力。必须重新引入博弈论和强化学习的基因，这是实现其“通用AI赋能科学”终极目标的必经之路。</p></div>
+    </div>
+  </div></div>
+  
+<section class="section-block">
+  <h2 class="section-title">
+    <span class="title-dot"></span>
+    该人物近期其他观点
+    <span class="section-count">6 条</span>
+  </h2>
+  <div class="past-opinions">
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">Scientific breakthroughs will increasingly come from general AI agents rather than narrow, specialized models, and these agents should empower researchers across all scientific fields</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">AI should serve as a force multiplier for human scientific ingenuity by handling complex, time-consuming tasks, freeing researchers to focus on identifying the most impactful problems</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--claim" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">主张</span></div>
+      <div class="past-opinion-text">The primary bottleneck in modern science is not the generation of ideas but the manual synthesis and analysis of the exponentially growing body of scientific literature and data</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-05-17<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">Responsible development and deployment of AI tools for science requires deep collaboration with the scientific community, including validation from trusted testers ranging from PhD students to Nobel laureates</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-04-21<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">AI is one of the most transformative technologies of our time, capable of delivering new products and services and scientific breakthroughs that improve the lives of billions of people</div>
+    </div>
+    <div class="past-opinion-item">
+      <div class="past-opinion-date">2026-04-21<br><span class="type-badge type--position" style="font-size:.6rem;padding:1px 5px;margin-top:4px;display:inline-flex">立场</span></div>
+      <div class="past-opinion-text">AI must be diffused responsibly across industries and remain guided by human expertise to secure benefits and solve critical global challenges</div>
+    </div></div>
+</section>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
+  <div>最后更新：2026-06-09 20:42 UTC</div>
+</footer>
+</body>
+</html>
