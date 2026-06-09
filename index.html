@@ -30,7 +30,7 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · THINKER RADAR</div>
     <h1 class="hero-title">精选情报</h1>
-    <div class="hero-date">更新于 2026-06-09 23:24 UTC</div>
+    <div class="hero-date">更新于 2026-06-09 23:40 UTC</div>
     <div class="hero-stats">
       <div class="stat-item"><span class="stat-num">18</span><span class="stat-label">精选观点</span></div>
       <div class="stat-item"><span class="stat-num">18</span><span class="stat-label">重要信号</span></div>
@@ -196,6 +196,36 @@
       <div>
         <div class="thinker-name">Azeem</div>
         <div class="thinker-count">4 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="nassim-taleb"
+            style="--person-color:#991b1b"
+            onclick="filterPerson('nassim-taleb',this)">
+      <div class="thinker-avatar">NT</div>
+      <div>
+        <div class="thinker-name">Nassim</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="george-friedman"
+            style="--person-color:#1e3a5f"
+            onclick="filterPerson('george-friedman',this)">
+      <div class="thinker-avatar">GF</div>
+      <div>
+        <div class="thinker-name">George</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="tyler-cowen"
+            style="--person-color:#4f46e5"
+            onclick="filterPerson('tyler-cowen',this)">
+      <div class="thinker-avatar">TC</div>
+      <div>
+        <div class="thinker-name">Tyler</div>
+        <div class="thinker-count">0 条观点</div>
       </div>
     </button>
   </div>
@@ -610,7 +640,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-06-09 23:24 UTC</div>
+  <div>最后更新：2026-06-09 23:40 UTC</div>
 </footer>
 <script>
 let activePerson = 'all';
