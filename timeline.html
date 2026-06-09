@@ -1,0 +1,2948 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>时间轴 · ThinkerRadar</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">📡</div>
+      <div>
+        <div class="logo-text">ThinkerRadar</div>
+        <div class="logo-sub">思想雷达</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link">今日情报</a>
+      <a href="timeline.html" class="nav-link active">时间轴</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">思想雷达 · 时间轴</div>
+    <h1 class="hero-title">观点时间分类</h1>
+    <div class="hero-date">共追踪 137 条观点 · 横跨 5 个年份</div>
+  </div>
+</section>
+
+<main>
+<div class="container page-body">
+
+  <!-- Year tabs -->
+  <div class="year-tabs">
+    <button class="year-tab" data-year="2026" onclick="showYear('2026',this)">2026<span class="year-count">36</span></button><button class="year-tab" data-year="2025" onclick="showYear('2025',this)">2025<span class="year-count">41</span></button><button class="year-tab" data-year="2024" onclick="showYear('2024',this)">2024<span class="year-count">10</span></button><button class="year-tab" data-year="2023" onclick="showYear('2023',this)">2023<span class="year-count">46</span></button><button class="year-tab" data-year="2017" onclick="showYear('2017',this)">2017<span class="year-count">4</span></button>
+  </div>
+
+  <!-- Year panels -->
+  
+  <div class="year-panel" data-year="2026">
+    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:20%"></div><div class="bar-label">一月</div><div class="bar-count">3</div></div><div class="bar-cell"><div class="bar-fill" style="height:60%"></div><div class="bar-label">二月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">三月</div><div class="bar-count">15</div></div><div class="bar-cell"><div class="bar-fill" style="height:20%"></div><div class="bar-label">四月</div><div class="bar-count">3</div></div><div class="bar-cell"><div class="bar-fill" style="height:26%"></div><div class="bar-label">五月</div><div class="bar-count">4</div></div><div class="bar-cell"><div class="bar-fill" style="height:13%"></div><div class="bar-label">六月</div><div class="bar-count">2</div></div></div>
+    <div class="thinker-row" id="tl-thinker-row-2026">
+      <button class="thinker-chip active" data-person="all" onclick="tlFilter('2026','all',this)">
+        <div class="thinker-avatar" style="background:#1e40af">全部</div>
+        <span class="thinker-name">所有人</span>
+      </button>
+      
+      <button class="thinker-chip" data-person="demis-hassabis"
+              style="--person-color:#1d4ed8"
+              onclick="tlFilter('2026','demis-hassabis',this)">
+        <div class="thinker-avatar">DH</div>
+        <div>
+          <div class="thinker-name">Demis</div>
+          <div class="thinker-count">34 条</div>
+        </div>
+      </button>
+
+      <button class="thinker-chip" data-person="howard-marks"
+              style="--person-color:#dc2626"
+              onclick="tlFilter('2026','howard-marks',this)">
+        <div class="thinker-avatar">HM</div>
+        <div>
+          <div class="thinker-name">Howard</div>
+          <div class="thinker-count">2 条</div>
+        </div>
+      </button>
+    </div>
+    
+      <div class="tl-quarter">
+        <div class="tl-quarter-header">2026 Q1 · 27 条</div>
+        
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2026年 一月</span>
+            <span class="tl-month-count">3 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Building AGI requires systems that can navigate the diversity of the real world, not just perform in narrow domains like Chess or Go ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2026-01-29</span>
+      <a href="https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi scaling-laws">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">World models that simulate real-time physics and interactions with high consistency represent a breakthrough capability for AGI development ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Scaling Laws</span></div>
+    <div class="card-foot">
+      <span>2026-01-29</span>
+      <a href="https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">The organization is committed to building AI responsibly to benefit humanity as part of the AGI development mission</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-01-29</span>
+      <a href="https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2026年 二月</span>
+            <span class="tl-month-count">9 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="techno-optimism ai-safety">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI will be the most transformative technology in human history and must be deployed in ways that benefit all of humanity ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">AI Safety</span></div>
+    <div class="card-foot">
+      <span>2026-02-17</span>
+      <a href="https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Realizing AI's full potential requires deep, strategic collaboration between frontier AI labs, governments, academia, and civil society ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-02-17</span>
+      <a href="https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI should be deployed through government partnerships to serve citizens and meet national priorities in science, education, resilience, and public services ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2026-02-17</span>
+      <a href="https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">International dialogue and collaboration are essential to guide positive AI impacts and create global frameworks to prepare society for an AI-enabled future ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-02-17</span>
+      <a href="https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI systems can achieve research-level mathematical and scientific problem-solving by combining deep reasoning capabilities with iterative verification, web search integration, and the ability to acknowledge failure ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2026-02-09</span>
+      <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scaling-laws scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Scaling laws for AI reasoning continue to hold and improve as inference-time compute increases, extending beyond Olympiad-level problems into PhD-level and research-level mathematics ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scaling Laws</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2026-02-09</span>
+      <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI can bridge disparate scientific fields by applying advanced mathematical tools and techniques from one domain to solve problems in entirely different domains, accelerating research across mathematics, physics, and computer science ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2026-02-09</span>
+      <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">The mathematical and scientific community should develop a formal taxonomy to classify AI-assisted research by significance and degree of AI contribution, supporting responsible documentation and communication of AI-generated results ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2026-02-09</span>
+      <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI systems can achieve publishable-quality research contributions in multiple domains with appropriate human-AI collaboration models, though no landmark breakthroughs or major advances have yet been claimed</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2026-02-09</span>
+      <a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2026年 三月</span>
+            <span class="tl-month-count">15 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">As AI models develop conversational capabilities, the organization must proactively examine how AI interactions affect people and society, particularly regarding potential for harmful manipulation. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-03-25</span>
+      <a href="https://deepmind.google/blog/protecting-people-from-harmful-manipulation/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Understanding and mitigating harmful manipulation through targeted empirical evaluation is a complex ongoing challenge that requires continuous refinement of evaluation and mitigation techniques as model capabilities evolve.</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-03-25</span>
+      <a href="https://deepmind.google/blog/protecting-people-from-harmful-manipulation/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">The success of AI manipulation tactics in one domain does not predict success in another, requiring domain-specific testing rather than universal evaluation approaches. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-03-25</span>
+      <a href="https://deepmind.google/blog/protecting-people-from-harmful-manipulation/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Both the efficacy and propensity of AI systems to employ manipulative tactics must be measured to build targeted mitigations against harmful manipulation. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-03-25</span>
+      <a href="https://deepmind.google/blog/protecting-people-from-harmful-manipulation/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Cognitive science provides an important methodological foundation for measuring progress toward AGI, and a cognitive taxonomy approach drawing from psychology, neuroscience and cognitive science is valuable for understanding AI general intelligence ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2026-03-17</span>
+      <a href="https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">General intelligence in AI systems will depend critically on ten specific cognitive capabilities: perception, generation, attention, learning, memory, reasoning, metacognition, executive functions, problem solving, and social cognition ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-03-17</span>
+      <a href="https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Current evaluation gaps are particularly significant in five cognitive ability areas: learning, metacognition, attention, executive functions, and social cognition, making these priority areas for benchmark development ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-03-17</span>
+      <a href="https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Lack of empirical tools for evaluating systems' general intelligence is a significant barrier to understanding progress toward AGI</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-03-17</span>
+      <a href="https://deepmind.google/blog/measuring-progress-toward-agi-a-cognitive-framework/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi techno-optimism scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AGI will be the most profound technology ever invented and has the potential to be the ultimate tool for advancing science, medicine, and productivity ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2026-03-09</span>
+      <a href="https://deepmind.google/blog/10-years-of-alphago/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AlphaGo's victory was not a distant future prospect but a present reality that signaled how the world was about to change - serving as a 'roadmap from the future' ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2026-03-09</span>
+      <a href="https://deepmind.google/blog/10-years-of-alphago/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">The techniques pioneered with AlphaGo were ready to be applied to accelerating scientific breakthroughs, which was always the real goal rather than game-playing ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-03-09</span>
+      <a href="https://deepmind.google/blog/10-years-of-alphago/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">For fundamental breakthroughs in clean energy and disease solving, highly specialized AI models are insufficient - general AI systems capable of finding underlying structure and connections across domains are necessary ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2026-03-09</span>
+      <a href="https://deepmind.google/blog/10-years-of-alphago/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">True AGI will require understanding of the physical world, achieved through multimodal AI systems that can process language, audio, video, images, and code to build world models ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-03-09</span>
+      <a href="https://deepmind.google/blog/10-years-of-alphago/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">The combination of Gemini's world models, AlphaGo's search and planning techniques, and specialized AI tool use will be critical for achieving AGI ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-03-09</span>
+      <a href="https://deepmind.google/blog/10-years-of-alphago/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">True creativity in AGI requires not just novel strategies within existing domains but the capacity to invent entirely new domains as deep and elegant as Go itself ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2026-03-09</span>
+      <a href="https://deepmind.google/blog/10-years-of-alphago/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+      </div>
+      <div class="tl-quarter">
+        <div class="tl-quarter-header">2026 Q2 · 9 条</div>
+        
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2026年 四月</span>
+            <span class="tl-month-count">3 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="techno-optimism scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI is one of the most transformative technologies of our time, capable of delivering new products and services and scientific breakthroughs that improve the lives of billions of people ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2026-04-21</span>
+      <a href="https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI must be diffused responsibly across industries and remain guided by human expertise to secure benefits and solve critical global challenges ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-04-21</span>
+      <a href="https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-agents market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">There is a significant adoption gap between AI's economic potential and current enterprise implementation, with only 25% of organizations having successfully moved AI into production at scale</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2026-04-21</span>
+      <a href="https://deepmind.google/blog/partnering-with-industry-leaders-to-accelerate-ai-transformation/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2026年 五月</span>
+            <span class="tl-month-count">4 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-agents scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Scientific breakthroughs will increasingly come from general AI agents rather than narrow, specialized models, and these agents should empower researchers across all scientific fields ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2026-05-17</span>
+      <a href="https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI should serve as a force multiplier for human scientific ingenuity by handling complex, time-consuming tasks, freeing researchers to focus on identifying the most impactful problems ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2026-05-17</span>
+      <a href="https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">The primary bottleneck in modern science is not the generation of ideas but the manual synthesis and analysis of the exponentially growing body of scientific literature and data</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2026-05-17</span>
+      <a href="https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-safety">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Responsible development and deployment of AI tools for science requires deep collaboration with the scientific community, including validation from trusted testers ranging from PhD students to Nobel laureates</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Safety</span></div>
+    <div class="card-foot">
+      <span>2026-05-17</span>
+      <a href="https://deepmind.google/blog/gemini-for-science-ai-experiments-and-tools-for-a-new-era-of-discovery/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2026年 六月</span>
+            <span class="tl-month-count">2 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <a href="opinions/op001/index.html" class="opinion-card card-clickable"
+       style="--person-color:#dc2626;--person-rgb:220,38,38"
+       data-person="howard-marks"
+       data-themes="market-cycles risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#dc2626">
+        <span class="person-dot">H</span>
+        Howard
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">当前市场估值已接近历史极端水平，但这并不意味着泡沫即将破裂——泡沫可以比理性预期持续更长时间。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-06-01</span>
+      <a href="opinions/op001/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/op002/index.html" class="opinion-card card-clickable"
+       style="--person-color:#dc2626;--person-rgb:220,38,38"
+       data-person="howard-marks"
+       data-themes="market-cycles risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#dc2626">
+        <span class="person-dot">H</span>
+        Howard
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">未来12-18个月，信贷市场面临流动性收缩，高收益债券违约率可能上升至历史均值以上。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-06-01</span>
+      <a href="opinions/op002/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a></div>
+        </div>
+      </div>
+  </div>
+  <div class="year-panel" data-year="2025">
+    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:33%"></div><div class="bar-label">五月</div><div class="bar-count">6</div></div><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">十月</div><div class="bar-count">18</div></div><div class="bar-cell"><div class="bar-fill" style="height:44%"></div><div class="bar-label">十一月</div><div class="bar-count">8</div></div><div class="bar-cell"><div class="bar-fill" style="height:50%"></div><div class="bar-label">十二月</div><div class="bar-count">9</div></div></div>
+    <div class="thinker-row" id="tl-thinker-row-2025">
+      <button class="thinker-chip active" data-person="all" onclick="tlFilter('2025','all',this)">
+        <div class="thinker-avatar" style="background:#1e40af">全部</div>
+        <span class="thinker-name">所有人</span>
+      </button>
+      
+      <button class="thinker-chip" data-person="demis-hassabis"
+              style="--person-color:#1d4ed8"
+              onclick="tlFilter('2025','demis-hassabis',this)">
+        <div class="thinker-avatar">DH</div>
+        <div>
+          <div class="thinker-name">Demis</div>
+          <div class="thinker-count">41 条</div>
+        </div>
+      </button>
+    </div>
+    
+      <div class="tl-quarter">
+        <div class="tl-quarter-header">2025 Q2 · 6 条</div>
+        
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2025年 五月</span>
+            <span class="tl-month-count">6 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Building world models that can understand, simulate and plan across environments is a critical stepping stone toward artificial general intelligence and universal AI assistants ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-05-20</span>
+      <a href="https://deepmind.google/blog/our-vision-for-building-a-universal-ai-assistant/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi scaling-laws">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">The path to AGI requires extending multimodal foundation models to become world models capable of planning and imagination similar to biological brains ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Scaling Laws</span></div>
+    <div class="card-foot">
+      <span>2025-05-20</span>
+      <a href="https://deepmind.google/blog/our-vision-for-building-a-universal-ai-assistant/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Agentic capabilities that enable multitasking and autonomous task completion across domains represent a critical capability for practical AI assistants ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-05-20</span>
+      <a href="https://deepmind.google/blog/our-vision-for-building-a-universal-ai-assistant/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Safety and responsibility must be central to research, development and deployment decisions for advanced AI assistants, requiring ongoing ethical exploration</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span></div>
+    <div class="card-foot">
+      <span>2025-05-20</span>
+      <a href="https://deepmind.google/blog/our-vision-for-building-a-universal-ai-assistant/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Fundamental research breakthroughs in quantum computing, mathematics, life sciences and algorithmic discovery are achievable through AI systems based on agent learning and planning ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2025-05-20</span>
+      <a href="https://deepmind.google/blog/our-vision-for-building-a-universal-ai-assistant/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Universal AI assistants that are intelligent, context-aware, and capable of planning and taking action across devices represent the next major evolution in AI utility ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-05-20</span>
+      <a href="https://deepmind.google/blog/our-vision-for-building-a-universal-ai-assistant/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+      </div>
+      <div class="tl-quarter">
+        <div class="tl-quarter-header">2025 Q4 · 35 条</div>
+        
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2025年 十月</span>
+            <span class="tl-month-count">18 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI can serve as a powerful collaborative tool with mathematicians to augment human creativity and accelerate the pace of scientific discovery ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2025-10-29</span>
+      <a href="https://deepmind.google/blog/accelerating-discovery-with-the-ai-for-math-initiative/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">We are only at the beginning of understanding the full scope of what AI can accomplish and how it can help address the deepest questions in science ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2025-10-29</span>
+      <a href="https://deepmind.google/blog/accelerating-discovery-with-the-ai-for-math-initiative/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Combining the intuition of world-leading mathematicians with novel AI capabilities can open new pathways of research and advance human knowledge toward breakthroughs across scientific disciplines ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2025-10-29</span>
+      <a href="https://deepmind.google/blog/accelerating-discovery-with-the-ai-for-math-initiative/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Mathematics is the foundational language of the universe and AI progress in mathematical reasoning represents a pivotal moment with implications across all scientific fields ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2025-10-29</span>
+      <a href="https://deepmind.google/blog/accelerating-discovery-with-the-ai-for-math-initiative/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI safety requires an evidence-based, scientific approach that evolves with advancing capabilities, with risks addressed proportionally to their severity through rigorous governance and mitigation strategies ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/strengthening-our-frontier-safety-framework/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Harmful manipulation—where AI models could systematically and substantially change beliefs and behaviors in high-stakes contexts—represents a critical capability level requiring explicit identification and mitigation ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/strengthening-our-frontier-safety-framework/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-safety ai-agents risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI models with advanced capabilities in research and development pose both misuse risks and misalignment risks through potential undirected action, necessitating safety case reviews for both external launches and large-scale internal deployments ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">AI Agents</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/strengthening-our-frontier-safety-framework/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">The path to beneficial AGI requires both technical breakthroughs and robust risk mitigation frameworks, with continued collaborative development across industry, academia, and government ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/strengthening-our-frontier-safety-framework/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Current static benchmarks are inadequate for evaluating frontier AI models because they suffer from memorization issues, saturation effects (models reaching near 100% performance), and inability to reveal meaningful performance differences between advanced systems ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/rethinking-how-we-measure-ai-intelligence/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Dynamic, human-judged testing improves upon static benchmarks but introduces new problems through the inherent subjectivity of human preferences, necessitating alternative evaluation approaches</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/rethinking-how-we-measure-ai-intelligence/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Games are an ideal benchmark for measuring general AI problem-solving intelligence because they provide unambiguous success signals, force demonstration of multiple critical capabilities (strategic reasoning, long-term planning, dynamic adaptation), and scale naturally with opponent intelligence ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/rethinking-how-we-measure-ai-intelligence/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">The ability to plan, adapt, and reason strategically under pressure in games is analogous to and predictive of the thinking needed to solve complex real-world challenges in science and business ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/rethinking-how-we-measure-ai-intelligence/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Current large language models significantly underperform at game-playing compared to specialized game engines and general game-playing AI, and closing this gap while eventually achieving superhuman performance beyond current capabilities is a meaningful long-term objective ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/rethinking-how-we-measure-ai-intelligence/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Game Arena will expand to include increasingly complex games (Go, poker, video games) and provide an ever-expanding, continuously-evolving benchmark that pushes boundaries of what AI models can achieve ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/rethinking-how-we-measure-ai-intelligence/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scaling-laws scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Larger biological models demonstrate improved performance on biology tasks, following scaling laws similar to natural language models, and this scaling enables entirely new emergent capabilities rather than just incremental improvements on existing tasks ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scaling Laws</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/how-a-gemma-model-helped-discover-a-new-potential-cancer-therapy-pathway/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scaling-laws scientific-discovery techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">The true value of scaling in AI lies not in performing existing tasks better, but in generating novel ideas and discovering previously unknown solutions to scientific problems ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scaling Laws</span> <span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/how-a-gemma-model-helped-discover-a-new-potential-cancer-therapy-pathway/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI models trained on cellular data can generate context-dependent biological hypotheses that are novel, experimentally testable, and capable of achieving significant biological effects not yet documented in scientific literature ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/how-a-gemma-model-helped-discover-a-new-potential-cancer-therapy-pathway/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scaling-laws">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Scaling laws in biology enable emergent capabilities for conditional reasoning and context-dependent problem-solving that smaller models cannot achieve ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scaling Laws</span></div>
+    <div class="card-foot">
+      <span>2025-10-23</span>
+      <a href="https://deepmind.google/blog/how-a-gemma-model-helped-discover-a-new-potential-cancer-therapy-pathway/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2025年 十一月</span>
+            <span class="tl-month-count">8 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi scaling-laws">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Gemini 3 represents a significant step forward on the path toward AGI, demonstrating that AI systems are progressing meaningfully in reasoning depth and multimodal understanding capabilities. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Scaling Laws</span></div>
+    <div class="card-foot">
+      <span>2025-11-18</span>
+      <a href="https://deepmind.google/blog/a-new-era-of-intelligence-with-gemini-3/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">State-of-the-art reasoning with unprecedented depth and nuance is a critical capability for AI systems to solve complex problems across diverse domains with high reliability. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2025-11-18</span>
+      <a href="https://deepmind.google/blog/a-new-era-of-intelligence-with-gemini-3/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Multimodal understanding—integrating text, images, video, audio and code—is essential for AI systems to help users learn and solve problems in flexible, intuitive ways.</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-11-18</span>
+      <a href="https://deepmind.google/blog/a-new-era-of-intelligence-with-gemini-3/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi scaling-laws">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Enhanced reasoning modes like Deep Think represent a meaningful performance frontier where iterative deepening of computational reasoning yields measurable improvements on frontier benchmarks. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Scaling Laws</span></div>
+    <div class="card-foot">
+      <span>2025-11-18</span>
+      <a href="https://deepmind.google/blog/a-new-era-of-intelligence-with-gemini-3/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-labor techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI should be positioned as a collaborative tool to enhance educator capabilities rather than replace teachers, when properly grounded in learning science principles ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2025-11-10</span>
+      <a href="https://deepmind.google/blog/how-ai-is-giving-northern-ireland-teachers-time-back/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">The success of AI in education requires close partnership with the entire education ecosystem, including teachers, administrators, and educational authorities ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2025-11-10</span>
+      <a href="https://deepmind.google/blog/how-ai-is-giving-northern-ireland-teachers-time-back/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="ai-labor techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Teachers possess unique capabilities that technology cannot replicate, and educational technology should be designed to preserve and amplify teacher agency ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2025-11-10</span>
+      <a href="https://deepmind.google/blog/how-ai-is-giving-northern-ireland-teachers-time-back/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">When AI tools are properly designed with learning science principles and put in the hands of educators, teachers will discover diverse and creative applications beyond anticipated use cases ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2025-11-10</span>
+      <a href="https://deepmind.google/blog/how-ai-is-giving-northern-ireland-teachers-time-back/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2025年 十二月</span>
+            <span class="tl-month-count">9 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="techno-optimism ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI is transitioning from being a tool that people use to a utility that people can put to work for them ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-12-23</span>
+      <a href="https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="agi ai-agents scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">2025 marked the year when AI began to genuinely think, act, and explore the world alongside humans, following 2024's foundation-laying in multimodality ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Agents</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2025-12-23</span>
+      <a href="https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="techno-optimism scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Research breakthroughs across AI, quantum computing, and other domains are being successfully converted into real-world applications and products with positive human impact</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2025-12-23</span>
+      <a href="https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="techno-optimism scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI presents a transformational opportunity to build a more prosperous and secure world, and the UK is uniquely positioned to translate AI innovation into public benefit ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2025-12-10</span>
+      <a href="https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI tools like AlphaFold, when provided to scientists, can enable breakthrough research at unprecedented scale and complexity, similar to how microscopes and telescopes historically enhanced scientific capacity ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-12-10</span>
+      <a href="https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Establishing automated AI-integrated laboratories focused on materials science can significantly accelerate the discovery of transformative materials with broad applications in energy, medical imaging, and computing ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2025-12-10</span>
+      <a href="https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="scientific-discovery ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI grounded in learning science can meaningfully augment classroom experiences by reducing educator workload while improving student learning outcomes ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2025-12-10</span>
+      <a href="https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Government partnerships with AI companies are critical to turning AI's potential into real progress for people, and such collaboration should be a global model ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2025-12-10</span>
+      <a href="https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+       data-person="demis-hassabis"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI will be humanity's most transformational technology ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2025-12-10</span>
+      <a href="https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+      </div>
+  </div>
+  <div class="year-panel" data-year="2024">
+    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">七月</div><div class="bar-count">10</div></div></div>
+    <div class="thinker-row" id="tl-thinker-row-2024">
+      <button class="thinker-chip active" data-person="all" onclick="tlFilter('2024','all',this)">
+        <div class="thinker-avatar" style="background:#1e40af">全部</div>
+        <span class="thinker-name">所有人</span>
+      </button>
+      
+      <button class="thinker-chip" data-person="marc-andreessen"
+              style="--person-color:#059669"
+              onclick="tlFilter('2024','marc-andreessen',this)">
+        <div class="thinker-avatar">MA</div>
+        <div>
+          <div class="thinker-name">Marc</div>
+          <div class="thinker-count">10 条</div>
+        </div>
+      </button>
+    </div>
+    
+      <div class="tl-quarter">
+        <div class="tl-quarter-header">2024 Q3 · 10 条</div>
+        
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2024年 七月</span>
+            <span class="tl-month-count">10 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="startup-ecosystem venture-capital monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Bad government policies are now the number one threat to Little Tech startups ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">Venture Capital</span> <span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">American technology, economic, and military leadership can and should continue for decades, enabling a Second American Century in the 21st century ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="startup-ecosystem venture-capital">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Startups, not incumbent corporations or government labs, have been the historical vanguard of American technology supremacy from Edison and Ford through SpaceX and Tesla ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">Venture Capital</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="monopoly-theory startup-ecosystem">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Incumbent companies weaponize government through regulatory capture to strangle startup competitors, resulting in government-enforced monopolies, cartels, and economic stagnation ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Monopoly & Competition</span> <span class="theme-chip">Startup Ecosystem</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="startup-ecosystem market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Current productivity growth is lower than the pre-1970s despite 50 years of computer and internet technology, indicating stagnation and decline in the American economy ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="startup-ecosystem monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Regulatory agencies are actively using investigations, prosecutions, intimidation, and threats to hobble emerging industries like Blockchain and AI ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="venture-capital startup-ecosystem">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">A proposed federal tax on unrealized capital gains would absolutely kill both startups and the venture capital industry that funds them ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Venture Capital</span> <span class="theme-chip">Startup Ecosystem</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="startup-ecosystem defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">The federal government increasingly favors big incumbent companies over innovative startups as a customer in critical sectors like defense and intelligence ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="startup-ecosystem monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Tech startups do not show up in Washington DC and the political system the way big companies do, creating an imbalance that perpetuates the war on startups ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="defense-technology techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">American military dominance has maintained overall global peace and prosperity since World War II to a level unprecedented in world history</p>
+    <div class="theme-row"><span class="theme-chip">Defense Technology</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2024-07-05</span>
+      <a href="https://pmarca.substack.com/p/the-little-tech-agenda" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+      </div>
+  </div>
+  <div class="year-panel" data-year="2023">
+    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:87%"></div><div class="bar-label">二月</div><div class="bar-count">14</div></div><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">三月</div><div class="bar-count">16</div></div><div class="bar-cell"><div class="bar-fill" style="height:68%"></div><div class="bar-label">六月</div><div class="bar-count">11</div></div><div class="bar-cell"><div class="bar-fill" style="height:31%"></div><div class="bar-label">八月</div><div class="bar-count">5</div></div></div>
+    <div class="thinker-row" id="tl-thinker-row-2023">
+      <button class="thinker-chip active" data-person="all" onclick="tlFilter('2023','all',this)">
+        <div class="thinker-avatar" style="background:#1e40af">全部</div>
+        <span class="thinker-name">所有人</span>
+      </button>
+      
+      <button class="thinker-chip" data-person="peter-thiel"
+              style="--person-color:#374151"
+              onclick="tlFilter('2023','peter-thiel',this)">
+        <div class="thinker-avatar">PT</div>
+        <div>
+          <div class="thinker-name">Peter</div>
+          <div class="thinker-count">5 条</div>
+        </div>
+      </button>
+
+      <button class="thinker-chip" data-person="marc-andreessen"
+              style="--person-color:#059669"
+              onclick="tlFilter('2023','marc-andreessen',this)">
+        <div class="thinker-avatar">MA</div>
+        <div>
+          <div class="thinker-name">Marc</div>
+          <div class="thinker-count">41 条</div>
+        </div>
+      </button>
+    </div>
+    
+      <div class="tl-quarter">
+        <div class="tl-quarter-header">2023 Q1 · 30 条</div>
+        
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2023年 二月</span>
+            <span class="tl-month-count">14 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">The concept of availability cascades is the most important idea and paper encountered in the last 20 years ⭐</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Topic importance is secondary to topic availability in determining whether cascades form and spread; many important topics never trigger cascades while many unimportant topics do ⭐</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Availability cascades have proliferated, accelerated, and intensified with the Internet and social media ⭐</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Social media has eliminated barriers between local and global cascades, exposing everyone to cascades originating anywhere in the world, spreading laterally without gatekeeper approval ⭐</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">The 'Great Weirding' that people experience is explained by the new liquid peer-to-peer online availability cascade environment ⭐</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Availability cascades will intensify further in the years ahead and things will only get stranger, with cascades moving through society with ever greater velocity and force ⭐</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">The current moment represents the most normal and placid state things will ever be in, and the most innocent and naive we will ever be ⭐</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">News media functions fundamentally as availability entrepreneurs competing to propose and propagate cascades that the media then reinforces through follow-up coverage ⭐</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Politicians function as availability entrepreneurs proposing cascades to resonate with voters; issue importance is secondary to cascade formation and voting motivation ⭐</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="startup-ecosystem venture-capital">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Startup founders are availability entrepreneurs whose success depends on triggering availability cascades around their company and product ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">Venture Capital</span></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/availability-cascades-run-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Technology's societal impact is the central story of our time and worthy of sustained intellectual attention ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/welcome" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">The world is more interesting, more comprehensible, and contains more possibilities than most people believe ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/welcome" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Intellectual consistency and freedom from charges of hypocrisy are overvalued as standards for discourse</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/welcome" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Tentative exploration and questioning should be valued over definitive declarations in intellectual discourse</p>
+    <div class="theme-row"></div>
+    <div class="card-foot">
+      <span>2023-02-28</span>
+      <a href="https://pmarca.substack.com/p/welcome" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2023年 三月</span>
+            <span class="tl-month-count">16 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Consensus is overvalued and polarization/disagreement is essential for arriving at truth through dialectical process ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-03-06</span>
+      <a href="https://pmarca.substack.com/p/for-polarization" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">The contemporary emphasis on consensus and agreement is intellectually dishonest and produces false conclusions because the antithesis is not stated forcefully enough to challenge the thesis ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-03-06</span>
+      <a href="https://pmarca.substack.com/p/for-polarization" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Expert consensus and fact-checkers are often used as tools to suppress genuine disagreement and advance singular agendas, rather than to discover truth ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-03-06</span>
+      <a href="https://pmarca.substack.com/p/for-polarization" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Society currently has excessive consensus and insufficient genuine disagreement ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-03-06</span>
+      <a href="https://pmarca.substack.com/p/for-polarization" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="ai-labor techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">AI will have a profound and almost entirely positive effect on society, but not in the ways most people expect regarding job displacement ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-03-05</span>
+      <a href="https://pmarca.substack.com/p/followup-to-why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="ai-labor monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Most jobs in the future will be in regulated sectors (healthcare, education, housing) and are therefore safe from AI displacement regardless of AI capability advancement ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2023-03-05</span>
+      <a href="https://pmarca.substack.com/p/followup-to-why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="monopoly-theory market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Technological innovation rapidly reduces prices and improves quality in unregulated, competitive markets like consumer electronics, but government subsidies and regulation in healthcare, education, and housing enable monopolistic incumbents to prevent innovation and maintain high prices ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Monopoly & Competition</span> <span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2023-03-05</span>
+      <a href="https://pmarca.substack.com/p/followup-to-why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Incumbent firms in regulated sectors actively lobby and conspire to prevent technological change, particularly innovation, as their primary strategy to maintain monopolistic profits ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2023-03-05</span>
+      <a href="https://pmarca.substack.com/p/followup-to-why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="ai-labor monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Universal Basic Income already exists implicitly through inflated prices paid by consumers for regulated sector goods and services; this burden will expand universally in the future ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2023-03-05</span>
+      <a href="https://pmarca.substack.com/p/followup-to-why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">The feeling that essential life expenses are becoming increasingly expensive is accurate and reflects actual price inflation driven by government-enabled monopolies in regulated sectors ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2023-03-05</span>
+      <a href="https://pmarca.substack.com/p/followup-to-why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="ai-labor monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">AI will not cause overall unemployment because regulatory barriers will prevent AI deployment across most of the economy before labor displacement becomes systemic ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2023-03-04</span>
+      <a href="https://pmarca.substack.com/p/why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Historical fears about technology causing unemployment have consistently proven wrong despite recurring 'jobs apocalypse' panics ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2023-03-04</span>
+      <a href="https://pmarca.substack.com/p/why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="monopoly-theory techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">The economy is bifurcated: lightly-regulated sectors with rapid technological innovation see falling prices and rising quality, while heavily-regulated sectors (healthcare, education, housing) see rising prices and technological stagnation ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Monopoly & Competition</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-03-04</span>
+      <a href="https://pmarca.substack.com/p/why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Regulated sectors are growing as a percentage of GDP while technologically-driven sectors shrink, creating a trajectory toward 99% of the economy being non-technological and regulated ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2023-03-04</span>
+      <a href="https://pmarca.substack.com/p/why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="monopoly-theory techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Consumers and producers have incompatible preferences: consumers want low prices (which requires deregulation and tech disruption) while producers want protection from disruption</p>
+    <div class="theme-row"><span class="theme-chip">Monopoly & Competition</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-03-04</span>
+      <a href="https://pmarca.substack.com/p/why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="monopoly-theory">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">Technological innovation is effectively forbidden in heavily-regulated sectors through regulatory capture, occupational licensing, price fixing, and government-enforced monopolies</p>
+    <div class="theme-row"><span class="theme-chip">Monopoly & Competition</span></div>
+    <div class="card-foot">
+      <span>2023-03-04</span>
+      <a href="https://pmarca.substack.com/p/why-ai-wont-cause-unemployment" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+      </div>
+      <div class="tl-quarter">
+        <div class="tl-quarter-header">2023 Q2 · 11 条</div>
+        
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2023年 六月</span>
+            <span class="tl-month-count">11 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="ai-safety techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI will not destroy the world and may save it; AI is fundamentally a tool owned and controlled by people, not an autonomous agent with independent goals ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="scientific-discovery techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Human intelligence is the primary lever that has created modern civilization and improved human welfare by 10,000x over 4,000 years, and AI augmentation of intelligence will continue this trajectory ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="ai-agents ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">AI will enable every child to have an infinitely patient, compassionate, and knowledgeable tutor; every person will have an AI assistant/mentor/therapist available throughout their life ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="ai-labor market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Productivity growth throughout the economy will accelerate dramatically, driving economic growth, new industries, new jobs, wage growth, and material prosperity ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span> <span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="scientific-discovery techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Scientific breakthroughs, new technologies, and medicines will dramatically expand as AI helps decode the laws of nature; AI could help solve climate change and achieve interstellar travel ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">AI will improve warfare by reducing wartime death rates through better decision-making by military and political leaders with AI advisors ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI is possibly the most important and best thing civilization has created, on par with electricity and microchips and probably exceeding them in significance ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Development and proliferation of AI is a moral obligation to ourselves, our children, and our future ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="ai-safety techno-optimism risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Current public panic about AI is a moral panic following historical patterns seen with every transformative technology; it is irrational and inflates legitimate concerns into hysteria ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI has a humanizing quality; AI tools give people without technical skills freedom to create, provide empathetic friendship benefits, and make the world warmer and nicer rather than harsher</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#059669;--person-rgb:5,150,105"
+       data-person="marc-andreessen"
+       data-themes="ai-safety risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#059669">
+        <span class="person-dot">M</span>
+        Marc
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Those making dramatic public statements about AI dangers to feed moral panic present themselves as selfless champions while actually serving other interests (implied to be self-interested) ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2023-06-06</span>
+      <a href="https://pmarca.substack.com/p/why-ai-will-save-the-world" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+      </div>
+      <div class="tl-quarter">
+        <div class="tl-quarter-header">2023 Q3 · 5 条</div>
+        
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2023年 八月</span>
+            <span class="tl-month-count">5 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#374151;--person-rgb:55,65,81"
+       data-person="peter-thiel"
+       data-themes="techno-optimism risk-management agi">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#374151">
+        <span class="person-dot">P</span>
+        Peter
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Both techno-pessimists who want to halt technological development and pure techno-optimists who believe only good comes from technology are wrong; the correct view acknowledges real existential risks from technology while embracing progress anyway ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Risk Management</span> <span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2023-08-31</span>
+      <a href="https://foundersfund.com/2023/08/diversity-myth-30-years-later/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#374151;--person-rgb:55,65,81"
+       data-person="peter-thiel"
+       data-themes="techno-optimism risk-management agi defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#374151">
+        <span class="person-dot">P</span>
+        Peter
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Existential risks from advanced technologies like synthetic biology, AI, and others are a necessary and acceptable corollary of living in an age of tremendous progress and wonder ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Risk Management</span> <span class="theme-chip">AGI</span></div>
+    <div class="card-foot">
+      <span>2023-08-31</span>
+      <a href="https://foundersfund.com/2023/08/diversity-myth-30-years-later/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#374151;--person-rgb:55,65,81"
+       data-person="peter-thiel"
+       data-themes="techno-optimism scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#374151">
+        <span class="person-dot">P</span>
+        Peter
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Dystopian fears about technologies (climate control, synthetic pathogens, GMOs, genetic enhancement) paradoxically reveal the immense positive potential those same technologies possess ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2023-08-31</span>
+      <a href="https://foundersfund.com/2023/08/diversity-myth-30-years-later/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#374151;--person-rgb:55,65,81"
+       data-person="peter-thiel"
+       data-themes="agi superintelligence">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#374151">
+        <span class="person-dot">P</span>
+        Peter
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">General artificial intelligence is approaching rapidly and its implications remain fundamentally unknowable ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Superintelligence</span></div>
+    <div class="card-foot">
+      <span>2023-08-31</span>
+      <a href="https://foundersfund.com/2023/08/diversity-myth-30-years-later/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#374151;--person-rgb:55,65,81"
+       data-person="peter-thiel"
+       data-themes="techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#374151">
+        <span class="person-dot">P</span>
+        Peter
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Much of contemporary civilization (cities, political systems, institutions, language, technology culture) is not worth preserving and may deserve destruction ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2023-08-31</span>
+      <a href="https://foundersfund.com/2023/08/diversity-myth-30-years-later/" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+      </div>
+  </div>
+  <div class="year-panel" data-year="2017">
+    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">一月</div><div class="bar-count">4</div></div></div>
+    <div class="thinker-row" id="tl-thinker-row-2017">
+      <button class="thinker-chip active" data-person="all" onclick="tlFilter('2017','all',this)">
+        <div class="thinker-avatar" style="background:#1e40af">全部</div>
+        <span class="thinker-name">所有人</span>
+      </button>
+      
+      <button class="thinker-chip" data-person="peter-thiel"
+              style="--person-color:#374151"
+              onclick="tlFilter('2017','peter-thiel',this)">
+        <div class="thinker-avatar">PT</div>
+        <div>
+          <div class="thinker-name">Peter</div>
+          <div class="thinker-count">4 条</div>
+        </div>
+      </button>
+    </div>
+    
+      <div class="tl-quarter">
+        <div class="tl-quarter-header">2017 Q1 · 4 条</div>
+        
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2017年 一月</span>
+            <span class="tl-month-count">4 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <article class="opinion-card"
+       style="--person-color:#374151;--person-rgb:55,65,81"
+       data-person="peter-thiel"
+       data-themes="techno-optimism risk-management scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#374151">
+        <span class="person-dot">P</span>
+        Peter
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Both techno-pessimists who want to halt technological development and accelerationists who see only benefits from technological progress are wrong; the correct position acknowledges genuine existential risks while treating them as acceptable corollaries of progress. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Risk Management</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2017-01-01</span>
+      <a href="https://foundersfund.com/2018/01/manifesto" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#374151;--person-rgb:55,65,81"
+       data-person="peter-thiel"
+       data-themes="techno-optimism scientific-discovery">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#374151">
+        <span class="person-dot">P</span>
+        Peter
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">Dystopian fears about technology (climate change, engineered pathogens, GMO crop failure) paradoxically imply positive technological capabilities (weather control, synthetic immunity enhancement, unprecedented food abundance) rather than genuine existential threats. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <div class="card-foot">
+      <span>2017-01-01</span>
+      <a href="https://foundersfund.com/2018/01/manifesto" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#374151;--person-rgb:55,65,81"
+       data-person="peter-thiel"
+       data-themes="market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#374151">
+        <span class="person-dot">P</span>
+        Peter
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Contemporary American society has become deeply corrupted in its cities, politics, language, science discourse, and individual atomization to the point where it is worth questioning which elements deserve preservation. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2017-01-01</span>
+      <a href="https://foundersfund.com/2018/01/manifesto" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article>
+
+  <article class="opinion-card"
+       style="--person-color:#374151;--person-rgb:55,65,81"
+       data-person="peter-thiel"
+       data-themes="techno-optimism defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#374151">
+        <span class="person-dot">P</span>
+        Peter
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Genuine progress and ambitious technological endeavor may require willingness to accept or even court existential risk as a necessary feature of transformative advancement. ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span> <span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2017-01-01</span>
+      <a href="https://foundersfund.com/2018/01/manifesto" target="_blank" rel="noopener" class="source-link">原文 →</a>
+    </div>
+  </article></div>
+        </div>
+      </div>
+  </div>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
+  <div>最后更新：2026-06-09 08:43 UTC</div>
+</footer>
+<script>
+const activeYearPersons = {};
+
+function showYear(yr, btn) {
+  document.querySelectorAll('.year-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.year-panel').forEach(p => {
+    p.style.display = p.dataset.year === yr ? '' : 'none';
+  });
+}
+
+function tlFilter(yr, personId, btn) {
+  activeYearPersons[yr] = personId;
+  const panel = document.querySelector(`.year-panel[data-year="${yr}"]`);
+  if (!panel) return;
+  panel.querySelectorAll('#tl-thinker-row-' + yr + ' .thinker-chip').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  panel.querySelectorAll('[data-person][data-themes]').forEach(card => {
+    const match = personId === 'all' || card.dataset.person === personId;
+    card.classList.toggle('opinion-card--hidden', !match);
+  });
+  // Hide empty months
+  panel.querySelectorAll('.tl-month').forEach(m => {
+    const visible = m.querySelectorAll('[data-person][data-themes]:not(.opinion-card--hidden)').length;
+    m.style.display = visible ? '' : 'none';
+  });
+  // Hide empty quarters
+  panel.querySelectorAll('.tl-quarter').forEach(q => {
+    const visible = q.querySelectorAll('.tl-month:not([style*="none"])').length;
+    q.style.display = visible ? '' : 'none';
+  });
+}
+
+// Activate default year on load
+document.addEventListener('DOMContentLoaded', () => {
+  const firstTab = document.querySelector('.year-tab');
+  if (firstTab) showYear(firstTab.dataset.year, firstTab);
+});
+</script>
+</body>
+</html>
