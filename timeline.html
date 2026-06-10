@@ -3550,7 +3550,7 @@ function showYear(yr, btn) {
   document.querySelectorAll('.year-tab').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   document.querySelectorAll('.year-panel').forEach(p => {
-    p.style.display = p.dataset.year === yr ? '' : 'none';
+    p.style.display = p.dataset.year === yr ? 'block' : 'none';
   });
 }
 
