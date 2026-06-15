@@ -30,7 +30,7 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · THINKER RADAR</div>
     <h1 class="hero-title">精选情报</h1>
-    <div class="hero-date">更新于 2026-06-13 18:11 UTC</div>
+    <div class="hero-date">更新于 2026-06-15 18:06 UTC</div>
     <div class="hero-stats">
       <div class="stat-item"><span class="stat-num">16</span><span class="stat-label">精选观点</span></div>
       <div class="stat-item"><span class="stat-num">16</span><span class="stat-label">重要信号</span></div>
@@ -219,6 +219,26 @@
       </div>
     </button>
 
+    <button class="thinker-chip" data-person="mustafa-suleyman"
+            style="--person-color:#64748b"
+            onclick="filterPerson('mustafa-suleyman',this)">
+      <div class="thinker-avatar">MS</div>
+      <div>
+        <div class="thinker-name">Mustafa</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
+    <button class="thinker-chip" data-person="shane-legg"
+            style="--person-color:#64748b"
+            onclick="filterPerson('shane-legg',this)">
+      <div class="thinker-avatar">SL</div>
+      <div>
+        <div class="thinker-name">Shane</div>
+        <div class="thinker-count">0 条观点</div>
+      </div>
+    </button>
+
     <button class="thinker-chip" data-person="tyler-cowen"
             style="--person-color:#4f46e5"
             onclick="filterPerson('tyler-cowen',this)">
@@ -234,15 +254,15 @@
   <div class="filter-bar" id="theme-filters">
     <div class="filter-group-label">按主题筛选</div>
     <button class="filter-btn active" data-theme="all" onclick="filterTheme('all',this)">全部</button>
-    <button class="filter-btn" data-theme="scientific-discovery" onclick="filterTheme('scientific-discovery',this)">Scientific Discovery via AI <span style="opacity:.6;font-size:.65rem">(6)</span></button>
     <button class="filter-btn" data-theme="risk-management" onclick="filterTheme('risk-management',this)">Risk Management <span style="opacity:.6;font-size:.65rem">(5)</span></button>
-    <button class="filter-btn" data-theme="ai-safety" onclick="filterTheme('ai-safety',this)">AI Safety <span style="opacity:.6;font-size:.65rem">(4)</span></button>
+    <button class="filter-btn" data-theme="scientific-discovery" onclick="filterTheme('scientific-discovery',this)">Scientific Discovery via AI <span style="opacity:.6;font-size:.65rem">(5)</span></button>
     <button class="filter-btn" data-theme="market-cycles" onclick="filterTheme('market-cycles',this)">Market Cycles <span style="opacity:.6;font-size:.65rem">(4)</span></button>
+    <button class="filter-btn" data-theme="techno-optimism" onclick="filterTheme('techno-optimism',this)">Techno-optimism <span style="opacity:.6;font-size:.65rem">(3)</span></button>
+    <button class="filter-btn" data-theme="ai-safety" onclick="filterTheme('ai-safety',this)">AI Safety <span style="opacity:.6;font-size:.65rem">(3)</span></button>
     <button class="filter-btn" data-theme="agi" onclick="filterTheme('agi',this)">AGI <span style="opacity:.6;font-size:.65rem">(2)</span></button>
     <button class="filter-btn" data-theme="ai-agents" onclick="filterTheme('ai-agents',this)">AI Agents <span style="opacity:.6;font-size:.65rem">(2)</span></button>
-    <button class="filter-btn" data-theme="techno-optimism" onclick="filterTheme('techno-optimism',this)">Techno-optimism <span style="opacity:.6;font-size:.65rem">(2)</span></button>
+    <button class="filter-btn" data-theme="ai-labor" onclick="filterTheme('ai-labor',this)">AI & Labor <span style="opacity:.6;font-size:.65rem">(1)</span></button>
     <button class="filter-btn" data-theme="monopoly-theory" onclick="filterTheme('monopoly-theory',this)">Monopoly & Competition <span style="opacity:.6;font-size:.65rem">(1)</span></button>
-    <button class="filter-btn" data-theme="startup-ecosystem" onclick="filterTheme('startup-ecosystem',this)">Startup Ecosystem <span style="opacity:.6;font-size:.65rem">(1)</span></button>
     <button class="filter-btn" data-theme="defense-technology" onclick="filterTheme('defense-technology',this)">Defense Technology <span style="opacity:.6;font-size:.65rem">(1)</span></button>
   </div>
 
@@ -252,35 +272,14 @@
     <h2 class="section-title">
       <span class="title-dot title-dot--gold"></span>
       精选观点
-      <span class="section-count">16 条 · 按信号强度排序</span>
+      <span class="section-count">16 条 · 按生成时间排序</span>
     </h2>
     <div class="opinion-grid opinion-grid--wide" id="curated-grid">
       
-  <a href="opinions/3aee15736d1ee0dd/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#d97706;--person-rgb:217,119,6"
-           data-person="geoffrey-hinton"
-           data-themes="ai-safety">
-    <div class="card-meta-row">
-      <span class="person-pill" style="background:#d97706">
-        <span class="person-dot">G</span>
-        Geoffrey
-      </span>
-      <span class="type-badge type--claim">主张</span>
-      <span class="notable-star" title="重要信号">⭐</span>
-    </div>
-    <p class="opinion-text">AI生成的虚假图文将导致人类社会丧失辨别真相的能力，‘人们将再也无法知道什么是真实的’</p>
-    <p class="opinion-context">对认知层系统性风险的断言</p>
-    <div class="theme-row"><span class="theme-chip">AI Safety</span></div>
-    <div class="card-foot">
-      <span>2026-06-07</span>
-      
-    </div>
-  </a>
-
-  <a href="opinions/dfd09dda802b835a/index.html" class="opinion-card opinion-card--notable card-clickable"
+  <a href="opinions/b2535050a720c865/index.html" class="opinion-card opinion-card--notable card-clickable"
            style="--person-color:#4f46e5;--person-rgb:79,70,229"
            data-person="tyler-cowen"
-           data-themes="agi ai-safety">
+           data-themes="techno-optimism">
     <div class="card-meta-row">
       <span class="person-pill" style="background:#4f46e5">
         <span class="person-dot">T</span>
@@ -289,11 +288,32 @@
       <span class="type-badge type--claim">主张</span>
       <span class="notable-star" title="重要信号">⭐</span>
     </div>
-    <p class="opinion-text">AI不具备意识，这一判断与否定北欧雷神等拟人化超自然存在同等确凿，属根本性本体论否定。</p>
-    <p class="opinion-context">将AI意识问题降格为人类认知偏误的延伸</p>
-    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Safety</span></div>
+    <p class="opinion-text">巴西拥有全球最多的未利用耕地，可不毁亚马逊雨林而将耕种面积翻倍，使其成为2050年全球最战略性的粮食生产国</p>
+    <p class="opinion-context">基于耕地潜力的地缘经济断言</p>
+    <div class="theme-row"><span class="theme-chip">Techno-optimism</span></div>
     <div class="card-foot">
-      <span>2026-06-10</span>
+      <span>2026-06-14</span>
+      
+    </div>
+  </a>
+
+  <a href="opinions/cb6f2244ec541233/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#0f766e;--person-rgb:15,118,110"
+           data-person="azeem-azhar"
+           data-themes="ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">AI将长期存在‘最后一英里’弱链接，人类岗位将持续存在远超主流叙事预期，且该环节将获得可观薪酬</p>
+    <p class="opinion-context">驳斥AI导致大规模失业的流行预测</p>
+    <div class="theme-row"><span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2026-06-14</span>
       
     </div>
   </a>
@@ -319,31 +339,10 @@
     </div>
   </a>
 
-  <a href="opinions/d084e95de19297c4/index.html" class="opinion-card opinion-card--notable card-clickable"
+  <a href="opinions/dfd09dda802b835a/index.html" class="opinion-card opinion-card--notable card-clickable"
            style="--person-color:#4f46e5;--person-rgb:79,70,229"
            data-person="tyler-cowen"
-           data-themes="scientific-discovery">
-    <div class="card-meta-row">
-      <span class="person-pill" style="background:#4f46e5">
-        <span class="person-dot">T</span>
-        Tyler
-      </span>
-      <span class="type-badge type--position">立场</span>
-      <span class="notable-star" title="重要信号">⭐</span>
-    </div>
-    <p class="opinion-text">美国正将科学资助体系从去中心化、同行评审主导的模式，转向白宫直接控制、政治优先的中央集权模式</p>
-    <p class="opinion-context">联邦资助新规改革</p>
-    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span></div>
-    <div class="card-foot">
-      <span>2026-06-11</span>
-      
-    </div>
-  </a>
-
-  <a href="opinions/697efaf0878b0ebb/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#4f46e5;--person-rgb:79,70,229"
-           data-person="tyler-cowen"
-           data-themes="scientific-discovery">
+           data-themes="agi ai-safety">
     <div class="card-meta-row">
       <span class="person-pill" style="background:#4f46e5">
         <span class="person-dot">T</span>
@@ -352,32 +351,11 @@
       <span class="type-badge type--claim">主张</span>
       <span class="notable-star" title="重要信号">⭐</span>
     </div>
-    <p class="opinion-text">将2026年对智能手机社会影响的直觉投射到2008–2010年，属于历史解释的‘时代错置’，削弱了因果主张的可信度</p>
-    <p class="opinion-context">指出研究存在方法论上的时代错置谬误</p>
-    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span></div>
+    <p class="opinion-text">AI不具备意识，这一判断与否定北欧雷神等拟人化超自然存在同等确凿，属根本性本体论否定。</p>
+    <p class="opinion-context">将AI意识问题降格为人类认知偏误的延伸</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">AI Safety</span></div>
     <div class="card-foot">
-      <span>2026-06-11</span>
-      
-    </div>
-  </a>
-
-  <a href="opinions/ac158a5476932956/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#0f766e;--person-rgb:15,118,110"
-           data-person="azeem-azhar"
-           data-themes="ai-safety startup-ecosystem">
-    <div class="card-meta-row">
-      <span class="person-pill" style="background:#0f766e">
-        <span class="person-dot">A</span>
-        Azeem
-      </span>
-      <span class="type-badge type--position">立场</span>
-      <span class="notable-star" title="重要信号">⭐</span>
-    </div>
-    <p class="opinion-text">AI驱动的自动化并非引发‘递归自我改进’式失控风险，而是人类主导的战略加速，其上限受商业现实（资本、芯片、电力）自然约束。</p>
-    <p class="opinion-context">回应Anthropic对递归自改进的警告</p>
-    <div class="theme-row"><span class="theme-chip">AI Safety</span> <span class="theme-chip">Startup Ecosystem</span></div>
-    <div class="card-foot">
-      <span>2026-06-07</span>
+      <span>2026-06-10</span>
       
     </div>
   </a>
@@ -403,44 +381,23 @@
     </div>
   </a>
 
-  <a href="opinions/872bf60ee673a67a/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#0f766e;--person-rgb:15,118,110"
-           data-person="azeem-azhar"
-           data-themes="market-cycles">
+  <a href="opinions/d084e95de19297c4/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#4f46e5;--person-rgb:79,70,229"
+           data-person="tyler-cowen"
+           data-themes="scientific-discovery">
     <div class="card-meta-row">
-      <span class="person-pill" style="background:#0f766e">
-        <span class="person-dot">A</span>
-        Azeem
+      <span class="person-pill" style="background:#4f46e5">
+        <span class="person-dot">T</span>
+        Tyler
       </span>
       <span class="type-badge type--position">立场</span>
       <span class="notable-star" title="重要信号">⭐</span>
     </div>
-    <p class="opinion-text">当前AI热潮是真实的客户驱动型繁荣，而非泡沫；仅一个指标亮红灯，尚不构成泡沫条件</p>
-    <p class="opinion-context">基于五指标历史模型的再评估</p>
-    <div class="theme-row"><span class="theme-chip">Market Cycles</span></div>
+    <p class="opinion-text">美国正将科学资助体系从去中心化、同行评审主导的模式，转向白宫直接控制、政治优先的中央集权模式</p>
+    <p class="opinion-context">联邦资助新规改革</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span></div>
     <div class="card-foot">
-      <span>2026-06-01</span>
-      
-    </div>
-  </a>
-
-  <a href="opinions/615bb255d9cab060/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#0f766e;--person-rgb:15,118,110"
-           data-person="azeem-azhar"
-           data-themes="scientific-discovery ai-agents">
-    <div class="card-meta-row">
-      <span class="person-pill" style="background:#0f766e">
-        <span class="person-dot">A</span>
-        Azeem
-      </span>
-      <span class="type-badge type--claim">主张</span>
-      <span class="notable-star" title="重要信号">⭐</span>
-    </div>
-    <p class="opinion-text">AI将重塑科学方法论本身——从假设生成、实验设计到分析迭代的完整闭环，而不仅是加快其中某一环节。</p>
-    <p class="opinion-context">Robin系统完成全周期科学闭环</p>
-    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
-    <div class="card-foot">
-      <span>2026-05-24</span>
+      <span>2026-06-11</span>
       
     </div>
   </a>
@@ -466,44 +423,86 @@
     </div>
   </a>
 
-  <a href="opinions/9f825ecb4e6317bb/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#1d4ed8;--person-rgb:29,78,216"
-           data-person="demis-hassabis"
-           data-themes="ai-agents scientific-discovery">
+  <a href="opinions/615bb255d9cab060/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#0f766e;--person-rgb:15,118,110"
+           data-person="azeem-azhar"
+           data-themes="scientific-discovery ai-agents">
     <div class="card-meta-row">
-      <span class="person-pill" style="background:#1d4ed8">
-        <span class="person-dot">D</span>
-        Demis
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
       </span>
-      <span class="type-badge type--position">立场</span>
+      <span class="type-badge type--claim">主张</span>
       <span class="notable-star" title="重要信号">⭐</span>
     </div>
-    <p class="opinion-text">科学突破将越来越多地源自通用人工智能代理，而非狭义的专用模型；这些代理应赋能所有科学领域的研究人员。</p>
-    <p class="opinion-context">Gemini for Science发布的主旨观点：“我们相信，新发现时代不会源于狭义的专用模型，而将来自能赋能各学科研究人员的通用智能代理。”</p>
-    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
+    <p class="opinion-text">AI将重塑科学方法论本身——从假设生成、实验设计到分析迭代的完整闭环，而不仅是加快其中某一环节。</p>
+    <p class="opinion-context">Robin系统完成全周期科学闭环</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Agents</span></div>
     <div class="card-foot">
-      <span>2026-05-17</span>
+      <span>2026-05-24</span>
       
     </div>
   </a>
 
-  <a href="opinions/op001/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#dc2626;--person-rgb:220,38,38"
-           data-person="howard-marks"
-           data-themes="market-cycles risk-management">
+  <a href="opinions/872bf60ee673a67a/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#0f766e;--person-rgb:15,118,110"
+           data-person="azeem-azhar"
+           data-themes="market-cycles">
     <div class="card-meta-row">
-      <span class="person-pill" style="background:#dc2626">
-        <span class="person-dot">H</span>
-        Howard
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
       </span>
       <span class="type-badge type--position">立场</span>
       <span class="notable-star" title="重要信号">⭐</span>
     </div>
-    <p class="opinion-text">当前市场估值已接近历史极端水平，但这并不意味着泡沫即将破裂——泡沫可以比理性预期持续更长时间。</p>
-    <p class="opinion-context">在最新备忘录中回应市场是否处于泡沫的质疑</p>
-    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <p class="opinion-text">当前AI热潮是真实的客户驱动型繁荣，而非泡沫；仅一个指标亮红灯，尚不构成泡沫条件</p>
+    <p class="opinion-context">基于五指标历史模型的再评估</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span></div>
     <div class="card-foot">
       <span>2026-06-01</span>
+      
+    </div>
+  </a>
+
+  <a href="opinions/4bdd9b68c8d2c56a/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#0f4c81;--person-rgb:15,76,129"
+           data-person="alex-karp"
+           data-themes="market-cycles techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f4c81">
+        <span class="person-dot">A</span>
+        Alex
+      </span>
+      <span class="type-badge type--position">立场</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">做空推动AI发展的核心企业（芯片与本体论公司）是荒谬的，因其正攫取该领域绝大部分利润</p>
+    <p class="opinion-context">回应Burry做空Palantir与Nvidia</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2025-11-04</span>
+      
+    </div>
+  </a>
+
+  <a href="opinions/3aee15736d1ee0dd/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#d97706;--person-rgb:217,119,6"
+           data-person="geoffrey-hinton"
+           data-themes="ai-safety">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#d97706">
+        <span class="person-dot">G</span>
+        Geoffrey
+      </span>
+      <span class="type-badge type--claim">主张</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">AI生成的虚假图文将导致人类社会丧失辨别真相的能力，‘人们将再也无法知道什么是真实的’</p>
+    <p class="opinion-context">对认知层系统性风险的断言</p>
+    <div class="theme-row"><span class="theme-chip">AI Safety</span></div>
+    <div class="card-foot">
+      <span>2026-06-07</span>
       
     </div>
   </a>
@@ -571,23 +570,44 @@
     </div>
   </a>
 
-  <a href="opinions/4bdd9b68c8d2c56a/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#0f4c81;--person-rgb:15,76,129"
-           data-person="alex-karp"
-           data-themes="market-cycles techno-optimism">
+  <a href="opinions/9f825ecb4e6317bb/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#1d4ed8;--person-rgb:29,78,216"
+           data-person="demis-hassabis"
+           data-themes="ai-agents scientific-discovery">
     <div class="card-meta-row">
-      <span class="person-pill" style="background:#0f4c81">
-        <span class="person-dot">A</span>
-        Alex
+      <span class="person-pill" style="background:#1d4ed8">
+        <span class="person-dot">D</span>
+        Demis
       </span>
       <span class="type-badge type--position">立场</span>
       <span class="notable-star" title="重要信号">⭐</span>
     </div>
-    <p class="opinion-text">做空推动AI发展的核心企业（芯片与本体论公司）是荒谬的，因其正攫取该领域绝大部分利润</p>
-    <p class="opinion-context">回应Burry做空Palantir与Nvidia</p>
-    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Techno-optimism</span></div>
+    <p class="opinion-text">科学突破将越来越多地源自通用人工智能代理，而非狭义的专用模型；这些代理应赋能所有科学领域的研究人员。</p>
+    <p class="opinion-context">Gemini for Science发布的主旨观点：“我们相信，新发现时代不会源于狭义的专用模型，而将来自能赋能各学科研究人员的通用智能代理。”</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Scientific Discovery via AI</span></div>
     <div class="card-foot">
-      <span>2025-11-04</span>
+      <span>2026-05-17</span>
+      
+    </div>
+  </a>
+
+  <a href="opinions/op001/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#dc2626;--person-rgb:220,38,38"
+           data-person="howard-marks"
+           data-themes="market-cycles risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#dc2626">
+        <span class="person-dot">H</span>
+        Howard
+      </span>
+      <span class="type-badge type--position">立场</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">当前市场估值已接近历史极端水平，但这并不意味着泡沫即将破裂——泡沫可以比理性预期持续更长时间。</p>
+    <p class="opinion-context">在最新备忘录中回应市场是否处于泡沫的质疑</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-06-01</span>
       
     </div>
   </a>
@@ -599,7 +619,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-06-13 18:11 UTC</div>
+  <div>最后更新：2026-06-15 18:06 UTC</div>
 </footer>
 <script>
 let activePerson = 'all';
