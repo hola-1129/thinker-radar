@@ -28,7 +28,7 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · 时间轴</div>
     <h1 class="hero-title">观点时间分类</h1>
-    <div class="hero-date">共追踪 195 条观点 · 横跨 5 个年份</div>
+    <div class="hero-date">共追踪 200 条观点 · 横跨 5 个年份</div>
   </div>
 </section>
 
@@ -37,13 +37,13 @@
 
   <!-- Year tabs -->
   <div class="year-tabs">
-    <button class="year-tab" data-year="2026" onclick="showYear('2026',this)">2026<span class="year-count">92</span></button><button class="year-tab" data-year="2025" onclick="showYear('2025',this)">2025<span class="year-count">43</span></button><button class="year-tab" data-year="2024" onclick="showYear('2024',this)">2024<span class="year-count">10</span></button><button class="year-tab" data-year="2023" onclick="showYear('2023',this)">2023<span class="year-count">46</span></button><button class="year-tab" data-year="2017" onclick="showYear('2017',this)">2017<span class="year-count">4</span></button>
+    <button class="year-tab" data-year="2026" onclick="showYear('2026',this)">2026<span class="year-count">97</span></button><button class="year-tab" data-year="2025" onclick="showYear('2025',this)">2025<span class="year-count">43</span></button><button class="year-tab" data-year="2024" onclick="showYear('2024',this)">2024<span class="year-count">10</span></button><button class="year-tab" data-year="2023" onclick="showYear('2023',this)">2023<span class="year-count">46</span></button><button class="year-tab" data-year="2017" onclick="showYear('2017',this)">2017<span class="year-count">4</span></button>
   </div>
 
   <!-- Year panels -->
   
   <div class="year-panel" data-year="2026">
-    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:8%"></div><div class="bar-label">一月</div><div class="bar-count">3</div></div><div class="bar-cell"><div class="bar-fill" style="height:26%"></div><div class="bar-label">二月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:44%"></div><div class="bar-label">三月</div><div class="bar-count">15</div></div><div class="bar-cell"><div class="bar-fill" style="height:26%"></div><div class="bar-label">四月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:64%"></div><div class="bar-label">五月</div><div class="bar-count">22</div></div><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">六月</div><div class="bar-count">34</div></div></div>
+    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:7%"></div><div class="bar-label">一月</div><div class="bar-count">3</div></div><div class="bar-cell"><div class="bar-fill" style="height:23%"></div><div class="bar-label">二月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:38%"></div><div class="bar-label">三月</div><div class="bar-count">15</div></div><div class="bar-cell"><div class="bar-fill" style="height:23%"></div><div class="bar-label">四月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:56%"></div><div class="bar-label">五月</div><div class="bar-count">22</div></div><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">六月</div><div class="bar-count">39</div></div></div>
     <div class="thinker-row" id="tl-thinker-row-2026">
       <button class="thinker-chip active" data-person="all" onclick="tlFilter('2026','all',this)">
         <div class="thinker-avatar" style="background:#1e40af">全部</div>
@@ -80,13 +80,23 @@
         </div>
       </button>
 
+      <button class="thinker-chip" data-person="niall-ferguson"
+              style="--person-color:#b45309"
+              onclick="tlFilter('2026','niall-ferguson',this)">
+        <div class="thinker-avatar">NF</div>
+        <div>
+          <div class="thinker-name">Niall</div>
+          <div class="thinker-count">2 条</div>
+        </div>
+      </button>
+
       <button class="thinker-chip" data-person="azeem-azhar"
               style="--person-color:#0f766e"
               onclick="tlFilter('2026','azeem-azhar',this)">
         <div class="thinker-avatar">AA</div>
         <div>
           <div class="thinker-name">Azeem</div>
-          <div class="thinker-count">32 条</div>
+          <div class="thinker-count">34 条</div>
         </div>
       </button>
 
@@ -106,7 +116,7 @@
         <div class="thinker-avatar">TC</div>
         <div>
           <div class="thinker-name">Tyler</div>
-          <div class="thinker-count">18 条</div>
+          <div class="thinker-count">19 条</div>
         </div>
       </button>
     </div>
@@ -647,7 +657,7 @@
         </div>
       </div>
       <div class="tl-quarter">
-        <div class="tl-quarter-header">2026 Q2 · 65 条</div>
+        <div class="tl-quarter-header">2026 Q2 · 70 条</div>
         
         <div class="tl-month">
           <div class="tl-month-header">
@@ -1253,9 +1263,104 @@
         <div class="tl-month">
           <div class="tl-month-header">
             <span class="tl-month-label">2026年 六月</span>
-            <span class="tl-month-count">34 条观点</span>
+            <span class="tl-month-count">39 条观点</span>
           </div>
           <div class="opinion-grid">
+  <a href="opinions/3706ec590601a9ba/index.html" class="opinion-card card-clickable"
+       style="--person-color:#4f46e5;--person-rgb:79,70,229"
+       data-person="tyler-cowen"
+       data-themes="startup-ecosystem ai-labor techno-optimism">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#4f46e5">
+        <span class="person-dot">T</span>
+        Tyler
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">我们可能正处在‘实验型经济’的早期阶段，即更多人能低成本测试想法、触达客户并创办企业，其中部分将极快成长为大型公司。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Startup Ecosystem</span> <span class="theme-chip">AI & Labor</span> <span class="theme-chip">Techno-optimism</span></div>
+    <div class="card-foot">
+      <span>2026-06-25</span>
+      <a href="opinions/3706ec590601a9ba/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/593e50d27dbd129b/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">生成式AI经济过去12个月真实营收为110亿美元，年化运行率达175亿美元，增速约为移动或互联网浪潮的三倍。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2026-06-25</span>
+      <a href="opinions/593e50d27dbd129b/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/d067ef2957bd98dd/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="risk-management venture-capital">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">AI营收已基本覆盖GPU基础设施折旧成本，关键支撑在于GPU经济寿命延长至6年——源于算力供需持续紧张及运营商调度效率提升。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Risk Management</span> <span class="theme-chip">Venture Capital</span></div>
+    <div class="card-foot">
+      <span>2026-06-25</span>
+      <a href="opinions/d067ef2957bd98dd/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/bf1e25be1a5e4774/index.html" class="opinion-card card-clickable"
+       style="--person-color:#b45309;--person-rgb:180,83,9"
+       data-person="niall-ferguson"
+       data-themes="defense-technology risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#b45309">
+        <span class="person-dot">N</span>
+        Niall
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">将美伊MOU比作‘苏伊士式妥协’，指出其本质是主动战略收缩而非被迫投降，关键在于行动实效而非文本措辞 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Defense Technology</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-06-24</span>
+      <a href="opinions/bf1e25be1a5e4774/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/b4fc23b741d8ecb9/index.html" class="opinion-card card-clickable"
+       style="--person-color:#b45309;--person-rgb:180,83,9"
+       data-person="niall-ferguson"
+       data-themes="risk-management defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#b45309">
+        <span class="person-dot">N</span>
+        Niall
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">和平由行动与意外后果共同塑造，纸面协议本身不构成和平——这是对国际政治中‘文本中心主义’的直接否定 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Risk Management</span> <span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2026-06-24</span>
+      <a href="opinions/b4fc23b741d8ecb9/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
   <a href="opinions/ac6a7efb1c02b065/index.html" class="opinion-card card-clickable"
        style="--person-color:#1e3a5f;--person-rgb:30,58,95"
        data-person="george-friedman"
@@ -4055,7 +4160,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-06-25 07:07 UTC</div>
+  <div>最后更新：2026-06-25 19:10 UTC</div>
 </footer>
 <script>
 const activeYearPersons = {};
