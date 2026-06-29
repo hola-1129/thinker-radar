@@ -30,11 +30,11 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · THINKER RADAR</div>
     <h1 class="hero-title">精选情报</h1>
-    <div class="hero-date">更新于 2026-06-29 13:11 UTC</div>
+    <div class="hero-date">更新于 2026-06-29 19:07 UTC</div>
     <div class="hero-stats">
       <div class="stat-item"><span class="stat-num">20</span><span class="stat-label">精选观点</span></div>
       <div class="stat-item"><span class="stat-num">20</span><span class="stat-label">重要信号</span></div>
-      <div class="stat-item"><span class="stat-num">8</span><span class="stat-label">思想者</span></div>
+      <div class="stat-item"><span class="stat-num">7</span><span class="stat-label">思想者</span></div>
     </div>
   </div>
 </section>
@@ -105,7 +105,7 @@
       <div class="thinker-avatar">HM</div>
       <div>
         <div class="thinker-name">Howard</div>
-        <div class="thinker-count">1 条观点</div>
+        <div class="thinker-count">0 条观点</div>
       </div>
     </button>
 
@@ -215,7 +215,7 @@
       <div class="thinker-avatar">GF</div>
       <div>
         <div class="thinker-name">George</div>
-        <div class="thinker-count">2 条观点</div>
+        <div class="thinker-count">3 条观点</div>
       </div>
     </button>
 
@@ -254,12 +254,12 @@
   <div class="filter-bar" id="theme-filters">
     <div class="filter-group-label">按主题筛选</div>
     <button class="filter-btn active" data-theme="all" onclick="filterTheme('all',this)">全部</button>
-    <button class="filter-btn" data-theme="risk-management" onclick="filterTheme('risk-management',this)">Risk Management <span style="opacity:.6;font-size:.65rem">(6)</span></button>
     <button class="filter-btn" data-theme="techno-optimism" onclick="filterTheme('techno-optimism',this)">Techno-optimism <span style="opacity:.6;font-size:.65rem">(6)</span></button>
+    <button class="filter-btn" data-theme="risk-management" onclick="filterTheme('risk-management',this)">Risk Management <span style="opacity:.6;font-size:.65rem">(5)</span></button>
+    <button class="filter-btn" data-theme="defense-technology" onclick="filterTheme('defense-technology',this)">Defense Technology <span style="opacity:.6;font-size:.65rem">(4)</span></button>
     <button class="filter-btn" data-theme="ai-safety" onclick="filterTheme('ai-safety',this)">AI Safety <span style="opacity:.6;font-size:.65rem">(4)</span></button>
-    <button class="filter-btn" data-theme="market-cycles" onclick="filterTheme('market-cycles',this)">Market Cycles <span style="opacity:.6;font-size:.65rem">(4)</span></button>
     <button class="filter-btn" data-theme="ai-labor" onclick="filterTheme('ai-labor',this)">AI & Labor <span style="opacity:.6;font-size:.65rem">(3)</span></button>
-    <button class="filter-btn" data-theme="defense-technology" onclick="filterTheme('defense-technology',this)">Defense Technology <span style="opacity:.6;font-size:.65rem">(3)</span></button>
+    <button class="filter-btn" data-theme="market-cycles" onclick="filterTheme('market-cycles',this)">Market Cycles <span style="opacity:.6;font-size:.65rem">(3)</span></button>
     <button class="filter-btn" data-theme="scientific-discovery" onclick="filterTheme('scientific-discovery',this)">Scientific Discovery via AI <span style="opacity:.6;font-size:.65rem">(3)</span></button>
     <button class="filter-btn" data-theme="monopoly-theory" onclick="filterTheme('monopoly-theory',this)">Monopoly & Competition <span style="opacity:.6;font-size:.65rem">(2)</span></button>
     <button class="filter-btn" data-theme="ai-agents" onclick="filterTheme('ai-agents',this)">AI Agents <span style="opacity:.6;font-size:.65rem">(2)</span></button>
@@ -276,6 +276,27 @@
     </h2>
     <div class="opinion-grid opinion-grid--wide" id="curated-grid">
       
+  <a href="opinions/de662323545fdaa3/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#1e3a5f;--person-rgb:30,58,95"
+           data-person="george-friedman"
+           data-themes="defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1e3a5f">
+        <span class="person-dot">G</span>
+        George
+      </span>
+      <span class="type-badge type--claim">主张</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">乌克兰对俄能源设施的持续打击已构成对俄罗斯经济与战争能力的根本性威胁，暴露其防空体系存在致命缺口</p>
+    <p class="opinion-context"> refinery袭击暴露防空漏洞</p>
+    <div class="theme-row"><span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2026-06-29</span>
+      
+    </div>
+  </a>
+
   <a href="opinions/b49a00acc33ca528/index.html" class="opinion-card opinion-card--notable card-clickable"
            style="--person-color:#0f4c81;--person-rgb:15,76,129"
            data-person="alex-karp"
@@ -674,27 +695,6 @@
       
     </div>
   </a>
-
-  <a href="opinions/op001/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#dc2626;--person-rgb:220,38,38"
-           data-person="howard-marks"
-           data-themes="market-cycles risk-management">
-    <div class="card-meta-row">
-      <span class="person-pill" style="background:#dc2626">
-        <span class="person-dot">H</span>
-        Howard
-      </span>
-      <span class="type-badge type--position">立场</span>
-      <span class="notable-star" title="重要信号">⭐</span>
-    </div>
-    <p class="opinion-text">当前市场估值已接近历史极端水平，但这并不意味着泡沫即将破裂——泡沫可以比理性预期持续更长时间。</p>
-    <p class="opinion-context">在最新备忘录中回应市场是否处于泡沫的质疑</p>
-    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
-    <div class="card-foot">
-      <span>2026-06-01</span>
-      
-    </div>
-  </a>
     </div>
   </section>
 
@@ -703,7 +703,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-06-29 13:11 UTC</div>
+  <div>最后更新：2026-06-29 19:07 UTC</div>
 </footer>
 <script>
 let activePerson = 'all';
