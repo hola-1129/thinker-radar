@@ -28,7 +28,7 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · 时间轴</div>
     <h1 class="hero-title">观点时间分类</h1>
-    <div class="hero-date">共追踪 210 条观点 · 横跨 5 个年份</div>
+    <div class="hero-date">共追踪 221 条观点 · 横跨 5 个年份</div>
   </div>
 </section>
 
@@ -37,13 +37,13 @@
 
   <!-- Year tabs -->
   <div class="year-tabs">
-    <button class="year-tab" data-year="2026" onclick="showYear('2026',this)">2026<span class="year-count">107</span></button><button class="year-tab" data-year="2025" onclick="showYear('2025',this)">2025<span class="year-count">43</span></button><button class="year-tab" data-year="2024" onclick="showYear('2024',this)">2024<span class="year-count">10</span></button><button class="year-tab" data-year="2023" onclick="showYear('2023',this)">2023<span class="year-count">46</span></button><button class="year-tab" data-year="2017" onclick="showYear('2017',this)">2017<span class="year-count">4</span></button>
+    <button class="year-tab" data-year="2026" onclick="showYear('2026',this)">2026<span class="year-count">118</span></button><button class="year-tab" data-year="2025" onclick="showYear('2025',this)">2025<span class="year-count">43</span></button><button class="year-tab" data-year="2024" onclick="showYear('2024',this)">2024<span class="year-count">10</span></button><button class="year-tab" data-year="2023" onclick="showYear('2023',this)">2023<span class="year-count">46</span></button><button class="year-tab" data-year="2017" onclick="showYear('2017',this)">2017<span class="year-count">4</span></button>
   </div>
 
   <!-- Year panels -->
   
   <div class="year-panel" data-year="2026">
-    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:6%"></div><div class="bar-label">一月</div><div class="bar-count">3</div></div><div class="bar-cell"><div class="bar-fill" style="height:19%"></div><div class="bar-label">二月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:31%"></div><div class="bar-label">三月</div><div class="bar-count">15</div></div><div class="bar-cell"><div class="bar-fill" style="height:19%"></div><div class="bar-label">四月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:46%"></div><div class="bar-label">五月</div><div class="bar-count">22</div></div><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">六月</div><div class="bar-count">47</div></div><div class="bar-cell"><div class="bar-fill" style="height:4%"></div><div class="bar-label">七月</div><div class="bar-count">2</div></div></div>
+    <div class="month-bars"><div class="bar-cell"><div class="bar-fill" style="height:6%"></div><div class="bar-label">一月</div><div class="bar-count">3</div></div><div class="bar-cell"><div class="bar-fill" style="height:19%"></div><div class="bar-label">二月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:31%"></div><div class="bar-label">三月</div><div class="bar-count">15</div></div><div class="bar-cell"><div class="bar-fill" style="height:19%"></div><div class="bar-label">四月</div><div class="bar-count">9</div></div><div class="bar-cell"><div class="bar-fill" style="height:46%"></div><div class="bar-label">五月</div><div class="bar-count">22</div></div><div class="bar-cell"><div class="bar-fill" style="height:100%"></div><div class="bar-label">六月</div><div class="bar-count">47</div></div><div class="bar-cell"><div class="bar-fill" style="height:8%"></div><div class="bar-label">七月</div><div class="bar-count">4</div></div><div class="bar-cell"><div class="bar-fill" style="height:19%"></div><div class="bar-label">八月</div><div class="bar-count">9</div></div></div>
     <div class="thinker-row" id="tl-thinker-row-2026">
       <button class="thinker-chip active" data-person="all" onclick="tlFilter('2026','all',this)">
         <div class="thinker-avatar" style="background:#1e40af">全部</div>
@@ -90,6 +90,16 @@
         </div>
       </button>
 
+      <button class="thinker-chip" data-person="stanley-druckenmiller"
+              style="--person-color:#0e7490"
+              onclick="tlFilter('2026','stanley-druckenmiller',this)">
+        <div class="thinker-avatar">SD</div>
+        <div>
+          <div class="thinker-name">Stanley</div>
+          <div class="thinker-count">1 条</div>
+        </div>
+      </button>
+
       <button class="thinker-chip" data-person="niall-ferguson"
               style="--person-color:#b45309"
               onclick="tlFilter('2026','niall-ferguson',this)">
@@ -106,7 +116,7 @@
         <div class="thinker-avatar">AA</div>
         <div>
           <div class="thinker-name">Azeem</div>
-          <div class="thinker-count">35 条</div>
+          <div class="thinker-count">44 条</div>
         </div>
       </button>
 
@@ -116,7 +126,7 @@
         <div class="thinker-avatar">GF</div>
         <div>
           <div class="thinker-name">George</div>
-          <div class="thinker-count">6 条</div>
+          <div class="thinker-count">7 条</div>
         </div>
       </button>
 
@@ -2171,14 +2181,52 @@
         </div>
       </div>
       <div class="tl-quarter">
-        <div class="tl-quarter-header">2026 Q3 · 2 条</div>
+        <div class="tl-quarter-header">2026 Q3 · 13 条</div>
         
         <div class="tl-month">
           <div class="tl-month-header">
             <span class="tl-month-label">2026年 七月</span>
-            <span class="tl-month-count">2 条观点</span>
+            <span class="tl-month-count">4 条观点</span>
           </div>
           <div class="opinion-grid">
+  <a href="opinions/e21c055c31ef146a/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles ai-labor">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">AI采用遵循J型曲线：前期学习成本高昂且无可见回报，成功与失败在初期经济信号上完全不可区分</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">AI & Labor</span></div>
+    <div class="card-foot">
+      <span>2026-07-30</span>
+      <a href="opinions/e21c055c31ef146a/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/52075a9196e44ccf/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">企业AI采用可划分为三类典型：受限采用者、项目堆砌者、系统学习者；前两类注定失败，仅第三类能跨越J型曲线拐点</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-07-30</span>
+      <a href="opinions/52075a9196e44ccf/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
   <a href="opinions/8e48647d8ee08eb9/index.html" class="opinion-card card-clickable"
        style="--person-color:#4f46e5;--person-rgb:79,70,229"
        data-person="tyler-cowen"
@@ -2214,6 +2262,183 @@
     <div class="card-foot">
       <span>2026-07-03</span>
       <a href="opinions/ceb3cef32dcaaa44/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a></div>
+        </div>
+        <div class="tl-month">
+          <div class="tl-month-header">
+            <span class="tl-month-label">2026年 八月</span>
+            <span class="tl-month-count">9 条观点</span>
+          </div>
+          <div class="opinion-grid">
+  <a href="opinions/2827e5cb4d3222dd/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0e7490;--person-rgb:14,116,144"
+       data-person="stanley-druckenmiller"
+       data-themes="market-cycles risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0e7490">
+        <span class="person-dot">S</span>
+        Stanley
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">稳定币将主导全球支付体系，而更广泛的加密货币是‘一个在寻找问题的解决方案’ ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-08-13</span>
+      <a href="opinions/2827e5cb4d3222dd/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/b7d4659bd148a092/index.html" class="opinion-card card-clickable"
+       style="--person-color:#1e3a5f;--person-rgb:30,58,95"
+       data-person="george-friedman"
+       data-themes="defense-technology">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#1e3a5f">
+        <span class="person-dot">G</span>
+        George
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">习近平追求一支既更智能化又更服从的军队，但这两项目标本质上不兼容 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Defense Technology</span></div>
+    <div class="card-foot">
+      <span>2026-08-13</span>
+      <a href="opinions/b7d4659bd148a092/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/952cfbae786d0f55/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">Meta当前每投入1美元AI资本支出，仅约三分之一能在一年内投入运营，较2024财年延迟整整1年 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-08-10</span>
+      <a href="opinions/952cfbae786d0f55/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/140d25aa61ad7b60/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="market-cycles venture-capital">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--prediction">预测</span>
+    </div>
+    <p class="opinion-text">2026年全球AI营收将达185–190亿美元；2027年有望达300亿美元，区间宽泛但300亿并非不合理 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Market Cycles</span> <span class="theme-chip">Venture Capital</span></div>
+    <div class="card-foot">
+      <span>2026-08-09</span>
+      <a href="opinions/140d25aa61ad7b60/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/7dc30a03a3e4fd20/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="risk-management market-cycles">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">当前美股市场整体健康，估值不激进，但债务融资结构隐忧显现，尚未需紧急干预，但不可排除未来触发风险 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">Risk Management</span> <span class="theme-chip">Market Cycles</span></div>
+    <div class="card-foot">
+      <span>2026-08-09</span>
+      <a href="opinions/7dc30a03a3e4fd20/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/3835e535056f0d8f/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-agents">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--framework">框架</span>
+    </div>
+    <p class="opinion-text">必须先手写定义可测试的‘完成线’，而非模糊目标；AI代理的可靠性取决于能否用确定性条件验证结果是否达成 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span></div>
+    <div class="card-foot">
+      <span>2026-08-05</span>
+      <a href="opinions/3835e535056f0d8f/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/56d46098104ae9d3/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-agents scaling-laws">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">应优先选用更大模型配合低努力度，而非小模型配高努力度——模型能力前置比计算强度后置更能提升产出质量与性价比 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Scaling Laws</span></div>
+    <div class="card-foot">
+      <span>2026-08-05</span>
+      <a href="opinions/56d46098104ae9d3/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/3f679da696d16963/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="ai-agents risk-management">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--claim">主张</span>
+    </div>
+    <p class="opinion-text">AI采用者的真正决策陷阱在于：需八年才能区分学习性投入与浪费性支出，短期财务表现具有高度误导性。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AI Agents</span> <span class="theme-chip">Risk Management</span></div>
+    <div class="card-foot">
+      <span>2026-08-02</span>
+      <a href="opinions/3f679da696d16963/index.html" class="source-link">深度解读 ✦</a>
+    </div>
+  </a>
+
+  <a href="opinions/2d025554bc60e465/index.html" class="opinion-card card-clickable"
+       style="--person-color:#0f766e;--person-rgb:15,118,110"
+       data-person="azeem-azhar"
+       data-themes="agi superintelligence">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#0f766e">
+        <span class="person-dot">A</span>
+        Azeem
+      </span>
+      <span class="type-badge type--position">立场</span>
+    </div>
+    <p class="opinion-text">Leopold Aschenbrenner基金清盘不构成对其‘通往超级智能需巨量算力基建’核心论断的证伪。 ⭐</p>
+    <div class="theme-row"><span class="theme-chip">AGI</span> <span class="theme-chip">Superintelligence</span></div>
+    <div class="card-foot">
+      <span>2026-08-02</span>
+      <a href="opinions/2d025554bc60e465/index.html" class="source-link">深度解读 ✦</a>
     </div>
   </a></div>
         </div>
@@ -4370,7 +4595,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-07-03 06:07 UTC</div>
+  <div>最后更新：2026-08-13 18:13 UTC</div>
 </footer>
 <script>
 const activeYearPersons = {};
