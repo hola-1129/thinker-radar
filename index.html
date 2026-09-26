@@ -30,7 +30,7 @@
   <div class="container">
     <div class="hero-eyebrow">思想雷达 · THINKER RADAR</div>
     <h1 class="hero-title">精选情报</h1>
-    <div class="hero-date">更新于 2026-09-25 18:09 UTC</div>
+    <div class="hero-date">更新于 2026-09-26 06:08 UTC</div>
     <div class="hero-stats">
       <div class="stat-item"><span class="stat-num">20</span><span class="stat-label">精选观点</span></div>
       <div class="stat-item"><span class="stat-num">20</span><span class="stat-label">重要信号</span></div>
@@ -254,15 +254,15 @@
   <div class="filter-bar" id="theme-filters">
     <div class="filter-group-label">按主题筛选</div>
     <button class="filter-btn active" data-theme="all" onclick="filterTheme('all',this)">全部</button>
+    <button class="filter-btn" data-theme="ai-safety" onclick="filterTheme('ai-safety',this)">AI Safety <span style="opacity:.6;font-size:.65rem">(6)</span></button>
     <button class="filter-btn" data-theme="defense-technology" onclick="filterTheme('defense-technology',this)">Defense Technology <span style="opacity:.6;font-size:.65rem">(6)</span></button>
     <button class="filter-btn" data-theme="risk-management" onclick="filterTheme('risk-management',this)">Risk Management <span style="opacity:.6;font-size:.65rem">(6)</span></button>
-    <button class="filter-btn" data-theme="ai-safety" onclick="filterTheme('ai-safety',this)">AI Safety <span style="opacity:.6;font-size:.65rem">(5)</span></button>
     <button class="filter-btn" data-theme="monopoly-theory" onclick="filterTheme('monopoly-theory',this)">Monopoly & Competition <span style="opacity:.6;font-size:.65rem">(3)</span></button>
     <button class="filter-btn" data-theme="ai-agents" onclick="filterTheme('ai-agents',this)">AI Agents <span style="opacity:.6;font-size:.65rem">(2)</span></button>
     <button class="filter-btn" data-theme="techno-optimism" onclick="filterTheme('techno-optimism',this)">Techno-optimism <span style="opacity:.6;font-size:.65rem">(2)</span></button>
-    <button class="filter-btn" data-theme="ai-labor" onclick="filterTheme('ai-labor',this)">AI & Labor <span style="opacity:.6;font-size:.65rem">(2)</span></button>
     <button class="filter-btn" data-theme="agi" onclick="filterTheme('agi',this)">AGI <span style="opacity:.6;font-size:.65rem">(2)</span></button>
     <button class="filter-btn" data-theme="market-cycles" onclick="filterTheme('market-cycles',this)">Market Cycles <span style="opacity:.6;font-size:.65rem">(2)</span></button>
+    <button class="filter-btn" data-theme="scientific-discovery" onclick="filterTheme('scientific-discovery',this)">Scientific Discovery via AI <span style="opacity:.6;font-size:.65rem">(1)</span></button>
     <button class="filter-btn" data-theme="scaling-laws" onclick="filterTheme('scaling-laws',this)">Scaling Laws <span style="opacity:.6;font-size:.65rem">(1)</span></button>
   </div>
 
@@ -276,6 +276,27 @@
     </h2>
     <div class="opinion-grid opinion-grid--wide" id="curated-grid">
       
+  <a href="opinions/4f20a2770871a881/index.html" class="opinion-card opinion-card--notable card-clickable"
+           style="--person-color:#4f46e5;--person-rgb:79,70,229"
+           data-person="tyler-cowen"
+           data-themes="scientific-discovery ai-safety">
+    <div class="card-meta-row">
+      <span class="person-pill" style="background:#4f46e5">
+        <span class="person-dot">T</span>
+        Tyler
+      </span>
+      <span class="type-badge type--position">立场</span>
+      <span class="notable-star" title="重要信号">⭐</span>
+    </div>
+    <p class="opinion-text">美国因过度恐惧AI末日而主动放弃AI领导权，将导致中国主导医疗等关键AI创新，造成数百万美国人本可避免的早逝</p>
+    <p class="opinion-context">对美中AI竞争后果的因果断言</p>
+    <div class="theme-row"><span class="theme-chip">Scientific Discovery via AI</span> <span class="theme-chip">AI Safety</span></div>
+    <div class="card-foot">
+      <span>2026-09-26</span>
+      
+    </div>
+  </a>
+
   <a href="opinions/6dbf7828433c231b/index.html" class="opinion-card opinion-card--notable card-clickable"
            style="--person-color:#0f766e;--person-rgb:15,118,110"
            data-person="azeem-azhar"
@@ -549,27 +570,6 @@
     </div>
   </a>
 
-  <a href="opinions/c95f43411f01d99c/index.html" class="opinion-card opinion-card--notable card-clickable"
-           style="--person-color:#4f46e5;--person-rgb:79,70,229"
-           data-person="tyler-cowen"
-           data-themes="ai-labor">
-    <div class="card-meta-row">
-      <span class="person-pill" style="background:#4f46e5">
-        <span class="person-dot">T</span>
-        Tyler
-      </span>
-      <span class="type-badge type--position">立场</span>
-      <span class="notable-star" title="重要信号">⭐</span>
-    </div>
-    <p class="opinion-text">劳动收入份额单独无法判断AI的分配后果，关键变量是经济增长率；高增长可使大幅劳动份额下降仍具包容性</p>
-    <p class="opinion-context">评估AI分配效应的核心标准</p>
-    <div class="theme-row"><span class="theme-chip">AI & Labor</span></div>
-    <div class="card-foot">
-      <span>2026-09-03</span>
-      
-    </div>
-  </a>
-
   <a href="opinions/8b4180dc0dad243e/index.html" class="opinion-card opinion-card--notable card-clickable"
            style="--person-color:#b45309;--person-rgb:180,83,9"
            data-person="niall-ferguson"
@@ -703,7 +703,7 @@
 
 <footer class="site-footer">
   <div>ThinkerRadar · 个人思想雷达系统 · 由 Claude AI 驱动分析</div>
-  <div>最后更新：2026-09-25 18:09 UTC</div>
+  <div>最后更新：2026-09-26 06:08 UTC</div>
 </footer>
 <script>
 let activePerson = 'all';
